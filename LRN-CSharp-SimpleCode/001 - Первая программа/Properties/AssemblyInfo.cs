@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("LRN-CSharp-SimpleCode")]
+[assembly: AssemblyTitle("001 - Первая программа")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("LRN-CSharp-SimpleCode")]
+[assembly: AssemblyProduct("001 - Первая программа")]
 [assembly: AssemblyCopyright("Copyright ©  2024")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("82e9407c-3dbf-408f-ba11-25828d2772af")]
+[assembly: Guid("3bd0c533-1b90-4809-b05f-124095fc199b")]
 
 // Version information for an assembly consists of the following four values:
 //

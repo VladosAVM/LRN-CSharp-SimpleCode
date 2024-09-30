@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LRN_CSharp_SimpleCode
+namespace _001___Первая_программа
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to DEV HELL †__");
+            Console.WriteLine("Welcome to C# DEV HELL");
         }
     }
 }

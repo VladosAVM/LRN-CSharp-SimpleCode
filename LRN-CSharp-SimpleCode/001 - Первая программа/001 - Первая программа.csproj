@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{82E9407C-3DBF-408F-BA11-25828D2772AF}</ProjectGuid>
+    <ProjectGuid>{3BD0C533-1B90-4809-B05F-124095FC199B}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>LRN_CSharp_SimpleCode</RootNamespace>
-    <AssemblyName>LRN-CSharp-SimpleCode</AssemblyName>
+    <RootNamespace>_001___Первая_программа</RootNamespace>
+    <AssemblyName>001 - Первая программа</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,7 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="001-Первая программа.cs" />
+    <Compile Include="001 - Первая программа.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
