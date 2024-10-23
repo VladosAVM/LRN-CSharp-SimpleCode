@@ -7,7 +7,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "001 - Lessons", "001 - Less
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "002 - Home Work", "002 - Home Work", "{E4F32F9C-5B4E-4F96-A45E-DA8FFB7C4E5B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "001 - Первая программа", "001 - Lessons\001 - Первая программа.csproj", "{3BD0C533-1B90-4809-B05F-124095FC199B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "002 - Структура проекта", "001 - Lessons\002 - Структура проекта\002 - Структура проекта.csproj", "{82CC9882-AF75-48F0-8877-3B02E46FC4D3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "001 - Первая программа", "001 - Lessons\001 - Первая программа\001 - Первая программа.csproj", "{3BD0C533-1B90-4809-B05F-124095FC199B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{82CC9882-AF75-48F0-8877-3B02E46FC4D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82CC9882-AF75-48F0-8877-3B02E46FC4D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82CC9882-AF75-48F0-8877-3B02E46FC4D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82CC9882-AF75-48F0-8877-3B02E46FC4D3}.Release|Any CPU.Build.0 = Release|Any CPU
 		{3BD0C533-1B90-4809-B05F-124095FC199B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{3BD0C533-1B90-4809-B05F-124095FC199B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3BD0C533-1B90-4809-B05F-124095FC199B}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -24,6 +30,7 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
+		{82CC9882-AF75-48F0-8877-3B02E46FC4D3} = {08017CE6-7599-4266-92C3-67685BCE0973}
 		{3BD0C533-1B90-4809-B05F-124095FC199B} = {08017CE6-7599-4266-92C3-67685BCE0973}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
