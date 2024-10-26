@@ -1,9 +1,12 @@
-﻿// Подключённые пространства имён
+﻿// Источник: https://www.youtube.com/watch?v=JD3Ois6i298
+
+// Подключённые пространства имён
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+
 
 /*
  * 1-ый вид многострочного коментария

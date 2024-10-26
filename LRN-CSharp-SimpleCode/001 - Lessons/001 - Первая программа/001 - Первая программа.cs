@@ -1,4 +1,5 @@
-﻿using System;
+﻿// Источник: https://www.youtube.com/watch?v=l77oxzJUhMQ
+using System;
 
 namespace _001___Первая_программа
 {
