@@ -1,6 +1,4 @@
-﻿// Источник: https://www.youtube.com/watch?v=JD3Ois6i298
-
-using System;
+﻿using System;
 
 /*
  * Переменные в C#
@@ -11,6 +9,7 @@ using System;
  * 
  * Присвоение значения переменной (размещение данных)
  * 
+ * Источник: https://www.youtube.com/watch?v=JD3Ois6i298
  */
 
 namespace _004___Переменные

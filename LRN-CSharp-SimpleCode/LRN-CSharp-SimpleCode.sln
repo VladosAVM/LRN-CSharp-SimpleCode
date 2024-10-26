@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "001 - Первая прог
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "004 - Переменные", "001 - Lessons\004 - Переменные\004 - Переменные.csproj", "{82CE2866-333B-4528-8CF3-E2A923C721A9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "005 - Ввод данных в консоль", "001 - Lessons\005 - Ввод данных в консоль\005 - Ввод данных в консоль.csproj", "{8276EE08-1445-4049-A0E9-B26BAC298856}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,6 +33,10 @@ Global
 		{82CE2866-333B-4528-8CF3-E2A923C721A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{82CE2866-333B-4528-8CF3-E2A923C721A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{82CE2866-333B-4528-8CF3-E2A923C721A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8276EE08-1445-4049-A0E9-B26BAC298856}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8276EE08-1445-4049-A0E9-B26BAC298856}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8276EE08-1445-4049-A0E9-B26BAC298856}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8276EE08-1445-4049-A0E9-B26BAC298856}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -39,6 +45,7 @@ Global
 		{82CC9882-AF75-48F0-8877-3B02E46FC4D3} = {08017CE6-7599-4266-92C3-67685BCE0973}
 		{3BD0C533-1B90-4809-B05F-124095FC199B} = {08017CE6-7599-4266-92C3-67685BCE0973}
 		{82CE2866-333B-4528-8CF3-E2A923C721A9} = {08017CE6-7599-4266-92C3-67685BCE0973}
+		{8276EE08-1445-4049-A0E9-B26BAC298856} = {08017CE6-7599-4266-92C3-67685BCE0973}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5131EB3F-3A15-4D42-8167-54A12762E996}
