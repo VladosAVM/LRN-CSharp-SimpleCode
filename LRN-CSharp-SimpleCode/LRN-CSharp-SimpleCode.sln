@@ -21,9 +21,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "007 - Преобразов�
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "003 - INFO", "003 - INFO", "{35FA4510-5CDB-4EE7-BC20-AB68442B2BD5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "001 - Разделители дробных чисел - Globalization, Decimal Separator", "003 - INFO\001 - Разделители дробных чисел - Globalization, Decimal Separator\001 - Разделители дробных чисел - Globalization, Decimal Separator.csproj", "{AC6A091C-39E1-405C-8B1C-B22F4DDBE10D}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "008 - Операторы, арифметические операции с числами", "001 - Lessons\008 - Операторы, арифметические операции с числами\008 - Операторы, арифметические операции с числами.csproj", "{590514A0-5B20-4164-A7E6-AB4ED22C1364}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "001 - Разделители дробных чисел - Globalization, Decimal Separator", "003 - INFO\001 - Разделители дробных чисел - Globalization, Decimal Separator\001 - Разделители дробных чисел - Globalization, Decimal Separator.csproj", "{AC6A091C-39E1-405C-8B1C-B22F4DDBE10D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -55,14 +55,14 @@ Global
 		{524590AD-4A9D-4BDF-97F8-CA0F460D6B33}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{524590AD-4A9D-4BDF-97F8-CA0F460D6B33}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{524590AD-4A9D-4BDF-97F8-CA0F460D6B33}.Release|Any CPU.Build.0 = Release|Any CPU
-		{AC6A091C-39E1-405C-8B1C-B22F4DDBE10D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AC6A091C-39E1-405C-8B1C-B22F4DDBE10D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AC6A091C-39E1-405C-8B1C-B22F4DDBE10D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AC6A091C-39E1-405C-8B1C-B22F4DDBE10D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{590514A0-5B20-4164-A7E6-AB4ED22C1364}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{590514A0-5B20-4164-A7E6-AB4ED22C1364}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{590514A0-5B20-4164-A7E6-AB4ED22C1364}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{590514A0-5B20-4164-A7E6-AB4ED22C1364}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC6A091C-39E1-405C-8B1C-B22F4DDBE10D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC6A091C-39E1-405C-8B1C-B22F4DDBE10D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC6A091C-39E1-405C-8B1C-B22F4DDBE10D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC6A091C-39E1-405C-8B1C-B22F4DDBE10D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -74,8 +74,8 @@ Global
 		{8276EE08-1445-4049-A0E9-B26BAC298856} = {08017CE6-7599-4266-92C3-67685BCE0973}
 		{3D82364F-1564-40EF-9061-94CA31ABAB1F} = {08017CE6-7599-4266-92C3-67685BCE0973}
 		{524590AD-4A9D-4BDF-97F8-CA0F460D6B33} = {08017CE6-7599-4266-92C3-67685BCE0973}
-		{AC6A091C-39E1-405C-8B1C-B22F4DDBE10D} = {35FA4510-5CDB-4EE7-BC20-AB68442B2BD5}
 		{590514A0-5B20-4164-A7E6-AB4ED22C1364} = {08017CE6-7599-4266-92C3-67685BCE0973}
+		{AC6A091C-39E1-405C-8B1C-B22F4DDBE10D} = {35FA4510-5CDB-4EE7-BC20-AB68442B2BD5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5131EB3F-3A15-4D42-8167-54A12762E996}
