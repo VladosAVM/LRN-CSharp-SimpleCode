@@ -15,7 +15,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "004 - Переменные"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "005 - Ввод данных в консоль", "001 - Lessons\005 - Ввод данных в консоль\005 - Ввод данных в консоль.csproj", "{8276EE08-1445-4049-A0E9-B26BAC298856}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "006 - Конвертация строки в число", "001 - Lessons\006 - Конвертация строки в число\006 - Конвертация строки в число.csproj", "{3D82364F-1564-40EF-9061-94CA31ABAB1F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "006 - Конвертация строки в число - класс Convert", "001 - Lessons\006 - Конвертация строки в число - класс Convert\006 - Конвертация строки в число - класс Convert.csproj", "{3D82364F-1564-40EF-9061-94CA31ABAB1F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
