@@ -37,6 +37,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "011 - Инкремент и
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "012 - Операции сравнения, операторы отношений", "001 - Lessons\012 - Операции сравнения, операторы отношений\012 - Операции сравнения, операторы отношений.csproj", "{D03033A9-0E34-400E-A512-17C819C4A786}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "013 - IF, ESLE - Конструкция логического выбора", "001 - Lessons\013 - IF, ESLE - Конструкция логического выбора\013 - IF, ESLE - Конструкция логического выбора.csproj", "{5EC10D93-F2F1-4D8F-BD98-016B80EB17D4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -95,6 +97,10 @@ Global
 		{D03033A9-0E34-400E-A512-17C819C4A786}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D03033A9-0E34-400E-A512-17C819C4A786}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D03033A9-0E34-400E-A512-17C819C4A786}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5EC10D93-F2F1-4D8F-BD98-016B80EB17D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5EC10D93-F2F1-4D8F-BD98-016B80EB17D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5EC10D93-F2F1-4D8F-BD98-016B80EB17D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5EC10D93-F2F1-4D8F-BD98-016B80EB17D4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -113,6 +119,7 @@ Global
 		{01670C6B-41A1-4EDD-8C90-1268473E42BC} = {E4F32F9C-5B4E-4F96-A45E-DA8FFB7C4E5B}
 		{537ACE66-4F9E-4095-94A0-BFE6F3713A84} = {08017CE6-7599-4266-92C3-67685BCE0973}
 		{D03033A9-0E34-400E-A512-17C819C4A786} = {08017CE6-7599-4266-92C3-67685BCE0973}
+		{5EC10D93-F2F1-4D8F-BD98-016B80EB17D4} = {08017CE6-7599-4266-92C3-67685BCE0973}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5131EB3F-3A15-4D42-8167-54A12762E996}
