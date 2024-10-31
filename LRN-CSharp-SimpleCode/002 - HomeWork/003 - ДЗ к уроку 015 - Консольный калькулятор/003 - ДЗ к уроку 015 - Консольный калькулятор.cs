@@ -11,78 +11,102 @@ namespace _003___ДЗ_к_уроку_015___Консольный_калькуля�
     {
         static void Main(string[] args)
         {
-            // Калькулятор через Switch Case
-            Console.WriteLine("Введите первое число:");
-            double numSC1 = double.Parse(Console.ReadLine());
-            Console.WriteLine("Введите второе число:");
-            double numSC2 = double.Parse(Console.ReadLine());
-
-            Console.WriteLine("Укажите арефметическую операцию: + - * /");
-            string mathOperationSC = Console.ReadLine();
-
-            switch (mathOperationSC)
+            while (true)
             {
-                case "+":
-                    Console.WriteLine($"{numSC1} + {numSC2} = " + (numSC1 + numSC2));
-                    break;
-                case "-":
-                    Console.WriteLine($"{numSC1} - {numSC2} = " + (numSC1 - numSC2));
-                    break;
-                case "*":
-                    Console.WriteLine($"{numSC1} * {numSC2} = " + (numSC1 * numSC2));
-                    break;
-                case "/":
-                    if (numSC1 != 0 && numSC2 != 0)
-                    {
-                        Console.WriteLine($"{numSC1} / {numSC2} = " + (numSC1 / numSC2));
-                    }
-                    else
-                    {
-                        Console.WriteLine("На ноль делить нельзя");
-                    }
-                    break;
-                default:
-                    Console.WriteLine("\n!!! Выбрана неверная математическая операция !!!");
-                    break;
-            }
-
-            // Калькулятор через If Else
-            Console.WriteLine("Введите первое число:");
-            double numIE1 = double.Parse(Console.ReadLine());
-            Console.WriteLine("Введите второе число:");
-            double numIE2 = double.Parse(Console.ReadLine());
-
-            Console.WriteLine("Укажите арефметическую операцию: + - * /");
-            string mathOperationIE = Console.ReadLine();
-
-            if (mathOperationIE == "+")
-            {
-                Console.WriteLine($"{numIE1} + {numIE2} = " + (numIE1 + numIE2));
-            }
-            else if (mathOperationIE == "-")
-            {
-                Console.WriteLine($"{numIE1} - {numIE2} = " + (numIE1 - numIE2));
-            }
-            else if (mathOperationIE == "*")
-            {
-                Console.WriteLine($"{numIE1} * {numIE2} = " + (numIE1 * numIE2));
-            }
-            else if (mathOperationIE == "/")
-            {
-                if (numIE1 != 0 && numIE2 != 0)
+                Console.Clear();
+                Console.WriteLine("- - - Консольный калькулятор - - -" +
+                                  "\nВыбирите вариант калькулятора:" +
+                                  "\n1. Switch Case" +
+                                  "\n2. If Else");
+                string calcVariation = Console.ReadLine();
+                switch (calcVariation)
                 {
-                    Console.WriteLine($"{numIE1} / {numIE2} = " + (numIE1 / numIE2));
-                }
-                else
-                {
-                    Console.WriteLine("На ноль делить нельзя");
+                    case "1":
+                        // Калькулятор через Switch Case
+                        Console.WriteLine("\nВведите первое число:");
+                        double numSC1 = double.Parse(Console.ReadLine());
+                        Console.WriteLine("Введите второе число:");
+                        double numSC2 = double.Parse(Console.ReadLine());
+
+                        Console.WriteLine("Укажите арефметическую операцию: + - * /");
+                        string mathOperationSC = Console.ReadLine();
+
+                        switch (mathOperationSC)
+                        {
+                            case "+":
+                                Console.WriteLine($"{numSC1} + {numSC2} = " + (numSC1 + numSC2));
+                                break;
+                            case "-":
+                                Console.WriteLine($"{numSC1} - {numSC2} = " + (numSC1 - numSC2));
+                                break;
+                            case "*":
+                                Console.WriteLine($"{numSC1} * {numSC2} = " + (numSC1 * numSC2));
+                                break;
+                            case "/":
+                                if (numSC1 != 0 && numSC2 != 0)
+                                {
+                                    Console.WriteLine($"{numSC1} / {numSC2} = " + (numSC1 / numSC2));
+                                }
+                                else
+                                {
+                                    Console.WriteLine("На ноль делить нельзя");
+                                }
+                                break;
+                            default:
+                                Console.WriteLine("\n!!! Выбрана неверная математическая операция !!!");
+                                break;
+                        }
+                        Console.ReadLine();
+                        break;
+                    case "2":
+                        // Калькулятор через If Else
+                        Console.WriteLine("\nВведите первое число:");
+                        double numIE1 = double.Parse(Console.ReadLine());
+                        Console.WriteLine("Введите второе число:");
+                        double numIE2 = double.Parse(Console.ReadLine());
+
+                        Console.WriteLine("Укажите арефметическую операцию: + - * /");
+                        string mathOperationIE = Console.ReadLine();
+
+                        if (mathOperationIE == "+")
+                        {
+                            Console.WriteLine($"{numIE1} + {numIE2} = " + (numIE1 + numIE2));
+                        }
+                        else if (mathOperationIE == "-")
+                        {
+                            Console.WriteLine($"{numIE1} - {numIE2} = " + (numIE1 - numIE2));
+                        }
+                        else if (mathOperationIE == "*")
+                        {
+                            Console.WriteLine($"{numIE1} * {numIE2} = " + (numIE1 * numIE2));
+                        }
+                        else if (mathOperationIE == "/")
+                        {
+                            if (numIE1 != 0 && numIE2 != 0)
+                            {
+                                Console.WriteLine($"{numIE1} / {numIE2} = " + (numIE1 / numIE2));
+                            }
+                            else
+                            {
+                                Console.WriteLine("На ноль делить нельзя");
+                            }
+                        }
+                        else
+                        {
+                            Console.WriteLine("\n!!! Выбрана неверная математическая операция !!!");
+                        }
+                        Console.ReadLine();
+                        break;
+                    default:
+                        Console.WriteLine("!!! Такого варианта калькулятора нет !!!");
+                        Console.ReadLine();
+                        break;
                 }
             }
-            else
-            {
-                Console.WriteLine("\n!!! Выбрана неверная математическая операция !!!");
-            }
-            Console.ReadLine();
+
+
+
+
 
         }
     }
