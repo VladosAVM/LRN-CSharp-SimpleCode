@@ -23,10 +23,23 @@ namespace _003___ДЗ_к_уроку_015___Консольный_калькуля�
                 {
                     case "1":
                         // Калькулятор через Switch Case
-                        Console.WriteLine("\nВведите первое число:");
-                        double numSC1 = double.Parse(Console.ReadLine());
-                        Console.WriteLine("Введите второе число:");
-                        double numSC2 = double.Parse(Console.ReadLine());
+                        double numSC1;
+                        double numSC2;
+
+                        try
+                        {
+                            Console.WriteLine("\nВведите первое число:");
+                            numSC1 = double.Parse(Console.ReadLine());
+                            Console.WriteLine("Введите второе число:");
+                            numSC2 = double.Parse(Console.ReadLine());
+                        }
+                        catch (Exception)
+                        {
+                            Console.WriteLine("!!! Введены НЕкорректные данные !!!");
+                            Console.ReadLine();
+                            continue;
+                        }
+                        
 
                         Console.WriteLine("Укажите арефметическую операцию: + - * /");
                         string mathOperationSC = Console.ReadLine();
@@ -56,10 +69,22 @@ namespace _003___ДЗ_к_уроку_015___Консольный_калькуля�
                         break;
                     case "2":
                         // Калькулятор через If Else
-                        Console.WriteLine("\nВведите первое число:");
-                        double numIE1 = double.Parse(Console.ReadLine());
-                        Console.WriteLine("Введите второе число:");
-                        double numIE2 = double.Parse(Console.ReadLine());
+                        double numIE1;
+                        double numIE2;
+
+                        try
+                        {
+                            Console.WriteLine("\nВведите первое число:");
+                            numIE1 = double.Parse(Console.ReadLine());
+                            Console.WriteLine("Введите второе число:");
+                            numIE2 = double.Parse(Console.ReadLine());
+                        }
+                        catch (Exception)
+                        {
+                            Console.WriteLine("!!! Введены НЕкорректные данные !!!");
+                            Console.ReadLine();
+                            continue;
+                        }                       
 
                         Console.WriteLine("Укажите арефметическую операцию: + - * /");
                         string mathOperationIE = Console.ReadLine();
