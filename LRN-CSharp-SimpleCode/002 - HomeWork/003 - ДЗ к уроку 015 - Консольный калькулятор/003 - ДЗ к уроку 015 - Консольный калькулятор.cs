@@ -43,14 +43,10 @@ namespace _003___ДЗ_к_уроку_015___Консольный_калькуля�
                                 Console.WriteLine($"{numSC1} * {numSC2} = " + (numSC1 * numSC2));
                                 break;
                             case "/":
-                                if (numSC1 != 0 && numSC2 != 0)
-                                {
+                                if (numSC2 != 0)
                                     Console.WriteLine($"{numSC1} / {numSC2} = " + (numSC1 / numSC2));
-                                }
                                 else
-                                {
                                     Console.WriteLine("На ноль делить нельзя");
-                                }
                                 break;
                             default:
                                 Console.WriteLine("\n!!! Выбрана неверная математическая операция !!!");
@@ -69,32 +65,20 @@ namespace _003___ДЗ_к_уроку_015___Консольный_калькуля�
                         string mathOperationIE = Console.ReadLine();
 
                         if (mathOperationIE == "+")
-                        {
                             Console.WriteLine($"{numIE1} + {numIE2} = " + (numIE1 + numIE2));
-                        }
                         else if (mathOperationIE == "-")
-                        {
                             Console.WriteLine($"{numIE1} - {numIE2} = " + (numIE1 - numIE2));
-                        }
                         else if (mathOperationIE == "*")
-                        {
                             Console.WriteLine($"{numIE1} * {numIE2} = " + (numIE1 * numIE2));
-                        }
                         else if (mathOperationIE == "/")
                         {
-                            if (numIE1 != 0 && numIE2 != 0)
-                            {
+                            if (numIE2 != 0)
                                 Console.WriteLine($"{numIE1} / {numIE2} = " + (numIE1 / numIE2));
-                            }
                             else
-                            {
                                 Console.WriteLine("На ноль делить нельзя");
-                            }
                         }
                         else
-                        {
                             Console.WriteLine("\n!!! Выбрана неверная математическая операция !!!");
-                        }
                         Console.ReadLine();
                         break;
                     default:
