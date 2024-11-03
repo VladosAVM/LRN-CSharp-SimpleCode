@@ -47,6 +47,16 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "015 - SWITCH, CASE - Кон
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "003 - ДЗ к уроку 015 - Консольный калькулятор", "002 - HomeWork\003 - ДЗ к уроку 015 - Консольный калькулятор\003 - ДЗ к уроку 015 - Консольный калькулятор.csproj", "{B716D654-AB0C-4FDC-BE07-0BA36096D46B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "016 - While - Цикл", "001 - Lessons\016 - While - Цикл\016 - While - Цикл.csproj", "{5F5D30C5-8F37-4568-B4BC-DC9160CADDF0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "998 - ChatGPT HomeWork", "998 - ChatGPT HomeWork", "{B48E9C1A-6337-4C2C-A2F5-15E527A1BA3F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "001 - Простые числа - проверка диапазона", "998 - ChatGPT HomeWork\001 - Простые числа - проверка диапазона\001 - Простые числа - проверка диапазона.csproj", "{DD08A094-AAFA-4875-9498-8EF865DDFA13}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "004 - ДЗ к уроку 016 - Сумма и кол-во чёт. и НЕчёт чисел", "002 - HomeWork\004 - ДЗ к уроку 016 - Сумма и кол-во чёт. и НЕчёт чисел\004 - ДЗ к уроку 016 - Сумма и кол-во чёт. и НЕчёт чисел.csproj", "{E2E696AE-EF58-4290-91B7-65F4797D2AC5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "017 - Do While - Цикл", "001 - Lessons\017 - Do While - Цикл\017 - Do While - Цикл.csproj", "{40550C8C-7E81-4300-8CED-71C43A0C6FB2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -125,6 +135,22 @@ Global
 		{B716D654-AB0C-4FDC-BE07-0BA36096D46B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B716D654-AB0C-4FDC-BE07-0BA36096D46B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B716D654-AB0C-4FDC-BE07-0BA36096D46B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F5D30C5-8F37-4568-B4BC-DC9160CADDF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F5D30C5-8F37-4568-B4BC-DC9160CADDF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F5D30C5-8F37-4568-B4BC-DC9160CADDF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F5D30C5-8F37-4568-B4BC-DC9160CADDF0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD08A094-AAFA-4875-9498-8EF865DDFA13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD08A094-AAFA-4875-9498-8EF865DDFA13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD08A094-AAFA-4875-9498-8EF865DDFA13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD08A094-AAFA-4875-9498-8EF865DDFA13}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E2E696AE-EF58-4290-91B7-65F4797D2AC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2E696AE-EF58-4290-91B7-65F4797D2AC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2E696AE-EF58-4290-91B7-65F4797D2AC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2E696AE-EF58-4290-91B7-65F4797D2AC5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40550C8C-7E81-4300-8CED-71C43A0C6FB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40550C8C-7E81-4300-8CED-71C43A0C6FB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40550C8C-7E81-4300-8CED-71C43A0C6FB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40550C8C-7E81-4300-8CED-71C43A0C6FB2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -148,6 +174,10 @@ Global
 		{3EE534F1-B296-47F9-BCF2-22062E6DFD03} = {08017CE6-7599-4266-92C3-67685BCE0973}
 		{CCF5CC82-2A7E-4403-AD39-FDCB4F97C492} = {08017CE6-7599-4266-92C3-67685BCE0973}
 		{B716D654-AB0C-4FDC-BE07-0BA36096D46B} = {E4F32F9C-5B4E-4F96-A45E-DA8FFB7C4E5B}
+		{5F5D30C5-8F37-4568-B4BC-DC9160CADDF0} = {08017CE6-7599-4266-92C3-67685BCE0973}
+		{DD08A094-AAFA-4875-9498-8EF865DDFA13} = {B48E9C1A-6337-4C2C-A2F5-15E527A1BA3F}
+		{E2E696AE-EF58-4290-91B7-65F4797D2AC5} = {E4F32F9C-5B4E-4F96-A45E-DA8FFB7C4E5B}
+		{40550C8C-7E81-4300-8CED-71C43A0C6FB2} = {08017CE6-7599-4266-92C3-67685BCE0973}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5131EB3F-3A15-4D42-8167-54A12762E996}
