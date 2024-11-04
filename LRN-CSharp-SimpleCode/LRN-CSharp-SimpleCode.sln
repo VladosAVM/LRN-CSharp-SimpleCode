@@ -57,6 +57,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "004 - ДЗ к уроку 01
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "017 - Do While - Цикл", "001 - Lessons\017 - Do While - Цикл\017 - Do While - Цикл.csproj", "{40550C8C-7E81-4300-8CED-71C43A0C6FB2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "018 - For - Цикл", "001 - Lessons\018 - For - Цикл\018 - For - Цикл.csproj", "{D0418310-1D15-4616-9407-EBDF3E16131D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -151,6 +153,10 @@ Global
 		{40550C8C-7E81-4300-8CED-71C43A0C6FB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{40550C8C-7E81-4300-8CED-71C43A0C6FB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{40550C8C-7E81-4300-8CED-71C43A0C6FB2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0418310-1D15-4616-9407-EBDF3E16131D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0418310-1D15-4616-9407-EBDF3E16131D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0418310-1D15-4616-9407-EBDF3E16131D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0418310-1D15-4616-9407-EBDF3E16131D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -178,6 +184,7 @@ Global
 		{DD08A094-AAFA-4875-9498-8EF865DDFA13} = {B48E9C1A-6337-4C2C-A2F5-15E527A1BA3F}
 		{E2E696AE-EF58-4290-91B7-65F4797D2AC5} = {E4F32F9C-5B4E-4F96-A45E-DA8FFB7C4E5B}
 		{40550C8C-7E81-4300-8CED-71C43A0C6FB2} = {08017CE6-7599-4266-92C3-67685BCE0973}
+		{D0418310-1D15-4616-9407-EBDF3E16131D} = {08017CE6-7599-4266-92C3-67685BCE0973}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5131EB3F-3A15-4D42-8167-54A12762E996}
