@@ -11,7 +11,7 @@ namespace _020___Break___Оператор__ключевое_слово_
     {
         static void Main(string[] args)
         {
-            /* Break - ключевое слово которое позволяет прервать
+            /* Break - ключевое слово позволяет прервать
              * выполнение кода в определённый момент.
              * 
              * Как пример, break используется в циклах в которых
@@ -31,11 +31,14 @@ namespace _020___Break___Оператор__ключевое_слово_
                 if (i % 10 == 0)
                 {
                     Console.WriteLine($"\n- - - Продолжить выполнение цыикла? - - -" +
-                                      $"\n AnyKey - Продолжить" +
-                                      $"\n ESC    - Остановить\n");
+                                      $"\n Enter  - Продолжить" +
+                                      $"\n AnyKey - Остановить\n");
 
-                    if (Console.ReadKey().Key == ConsoleKey.Escape)
+                    if (Console.ReadKey().Key != ConsoleKey.Enter)
+                    {
+                        Console.WriteLine("\nВыполнение цикла было прерванно пользователем...\n");
                         break;
+                    }
                 }
             }
         }
