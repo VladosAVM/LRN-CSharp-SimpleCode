@@ -26,6 +26,7 @@ namespace _005___ДЗ_к_уроку_022___Треугольники
                 }
                 Console.WriteLine();
             }
+
             /*
                 ###
                 ##
@@ -40,6 +41,7 @@ namespace _005___ДЗ_к_уроку_022___Треугольники
                 }
                 Console.WriteLine();
             }
+
             /*
                   #
                  ##
@@ -58,13 +60,13 @@ namespace _005___ДЗ_к_уроку_022___Треугольники
                 }
                 Console.WriteLine();
             }
-            Console.WriteLine();
 
             /*
                 ###
                  ##
                   #
              */
+            Console.WriteLine();
             for (int i = 0; i < 10; i++)
             {
                 for (int j = 10, k = 0 ; j > i; j--)
