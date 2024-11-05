@@ -67,6 +67,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "021 - Continue - Опера
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "022 - Вложенные циклы", "001 - Lessons\022 - Вложенные циклы\022 - Вложенные циклы.csproj", "{8BA20BFE-DFF9-457E-936B-B9B32511B37E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "005 - ДЗ к уроку 022 - Треугольники", "002 - HomeWork\005 - ДЗ к уроку 022 - Треугольники\005 - ДЗ к уроку 022 - Треугольники.csproj", "{2B2B6679-EF63-4510-97A3-6FE74D610352}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -181,6 +183,10 @@ Global
 		{8BA20BFE-DFF9-457E-936B-B9B32511B37E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8BA20BFE-DFF9-457E-936B-B9B32511B37E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8BA20BFE-DFF9-457E-936B-B9B32511B37E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B2B6679-EF63-4510-97A3-6FE74D610352}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B2B6679-EF63-4510-97A3-6FE74D610352}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B2B6679-EF63-4510-97A3-6FE74D610352}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B2B6679-EF63-4510-97A3-6FE74D610352}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -213,6 +219,7 @@ Global
 		{09001DB5-D217-42F3-B5FC-499FB94415BF} = {08017CE6-7599-4266-92C3-67685BCE0973}
 		{DB30AAF3-57AA-488A-8519-68AA28905F6B} = {08017CE6-7599-4266-92C3-67685BCE0973}
 		{8BA20BFE-DFF9-457E-936B-B9B32511B37E} = {08017CE6-7599-4266-92C3-67685BCE0973}
+		{2B2B6679-EF63-4510-97A3-6FE74D610352} = {E4F32F9C-5B4E-4F96-A45E-DA8FFB7C4E5B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5131EB3F-3A15-4D42-8167-54A12762E996}
