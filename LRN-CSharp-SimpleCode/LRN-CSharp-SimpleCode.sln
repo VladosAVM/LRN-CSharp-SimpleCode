@@ -61,6 +61,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "018 - For - Цикл", "001
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "019 - For - Разные виды применения цикла For", "001 - Lessons\019 - For - Разные виды применения цикла For\019 - For - Разные виды применения цикла For.csproj", "{B06511C2-99BE-4A81-A445-90A1A2CFE297}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "020 - Break - Оператор (ключевое слово)", "001 - Lessons\020 - Break - Оператор (ключевое слово)\020 - Break - Оператор (ключевое слово).csproj", "{09001DB5-D217-42F3-B5FC-499FB94415BF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -163,6 +165,10 @@ Global
 		{B06511C2-99BE-4A81-A445-90A1A2CFE297}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B06511C2-99BE-4A81-A445-90A1A2CFE297}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B06511C2-99BE-4A81-A445-90A1A2CFE297}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09001DB5-D217-42F3-B5FC-499FB94415BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09001DB5-D217-42F3-B5FC-499FB94415BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09001DB5-D217-42F3-B5FC-499FB94415BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09001DB5-D217-42F3-B5FC-499FB94415BF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -192,6 +198,7 @@ Global
 		{40550C8C-7E81-4300-8CED-71C43A0C6FB2} = {08017CE6-7599-4266-92C3-67685BCE0973}
 		{D0418310-1D15-4616-9407-EBDF3E16131D} = {08017CE6-7599-4266-92C3-67685BCE0973}
 		{B06511C2-99BE-4A81-A445-90A1A2CFE297} = {08017CE6-7599-4266-92C3-67685BCE0973}
+		{09001DB5-D217-42F3-B5FC-499FB94415BF} = {08017CE6-7599-4266-92C3-67685BCE0973}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5131EB3F-3A15-4D42-8167-54A12762E996}
