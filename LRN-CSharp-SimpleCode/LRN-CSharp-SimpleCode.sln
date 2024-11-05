@@ -65,6 +65,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "020 - Break - Операт�
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "021 - Continue - Оператор (ключевое слово)", "001 - Lessons\021 - Continue - Оператор (ключевое слово)\021 - Continue - Оператор (ключевое слово).csproj", "{DB30AAF3-57AA-488A-8519-68AA28905F6B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "022 - Вложенные циклы", "001 - Lessons\022 - Вложенные циклы\022 - Вложенные циклы.csproj", "{8BA20BFE-DFF9-457E-936B-B9B32511B37E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -175,6 +177,10 @@ Global
 		{DB30AAF3-57AA-488A-8519-68AA28905F6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DB30AAF3-57AA-488A-8519-68AA28905F6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DB30AAF3-57AA-488A-8519-68AA28905F6B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8BA20BFE-DFF9-457E-936B-B9B32511B37E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BA20BFE-DFF9-457E-936B-B9B32511B37E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BA20BFE-DFF9-457E-936B-B9B32511B37E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BA20BFE-DFF9-457E-936B-B9B32511B37E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -206,6 +212,7 @@ Global
 		{B06511C2-99BE-4A81-A445-90A1A2CFE297} = {08017CE6-7599-4266-92C3-67685BCE0973}
 		{09001DB5-D217-42F3-B5FC-499FB94415BF} = {08017CE6-7599-4266-92C3-67685BCE0973}
 		{DB30AAF3-57AA-488A-8519-68AA28905F6B} = {08017CE6-7599-4266-92C3-67685BCE0973}
+		{8BA20BFE-DFF9-457E-936B-B9B32511B37E} = {08017CE6-7599-4266-92C3-67685BCE0973}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5131EB3F-3A15-4D42-8167-54A12762E996}
