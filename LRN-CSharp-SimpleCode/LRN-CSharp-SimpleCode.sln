@@ -73,6 +73,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "023 - Тернарный о
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "024 - Массивы - Одномерный массив", "001 - Lessons\024 - Массивы - Одномерный массив\024 - Массивы - Одномерный массив.csproj", "{9B3D02C1-A78B-4336-862F-BBBEE57EF32F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "025 - Способы инициализации массива", "001 - Lessons\025 - Способы инициализации массива\025 - Способы инициализации массива.csproj", "{19B874CA-552A-4445-A44A-318502DED378}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -199,6 +201,10 @@ Global
 		{9B3D02C1-A78B-4336-862F-BBBEE57EF32F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9B3D02C1-A78B-4336-862F-BBBEE57EF32F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9B3D02C1-A78B-4336-862F-BBBEE57EF32F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19B874CA-552A-4445-A44A-318502DED378}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19B874CA-552A-4445-A44A-318502DED378}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19B874CA-552A-4445-A44A-318502DED378}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19B874CA-552A-4445-A44A-318502DED378}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -234,6 +240,7 @@ Global
 		{2B2B6679-EF63-4510-97A3-6FE74D610352} = {E4F32F9C-5B4E-4F96-A45E-DA8FFB7C4E5B}
 		{0109DBB9-9BFC-4680-AAE6-9384EC96FE57} = {08017CE6-7599-4266-92C3-67685BCE0973}
 		{9B3D02C1-A78B-4336-862F-BBBEE57EF32F} = {08017CE6-7599-4266-92C3-67685BCE0973}
+		{19B874CA-552A-4445-A44A-318502DED378} = {08017CE6-7599-4266-92C3-67685BCE0973}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5131EB3F-3A15-4D42-8167-54A12762E996}
