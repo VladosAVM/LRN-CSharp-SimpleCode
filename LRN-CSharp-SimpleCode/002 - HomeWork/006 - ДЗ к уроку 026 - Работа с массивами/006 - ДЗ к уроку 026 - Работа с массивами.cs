@@ -42,10 +42,6 @@ namespace _006___ДЗ_к_уроку_026___Работа_с_массивами
                 minNum = minNum > hwArray[i] ? hwArray[i] : minNum;
             }
             Console.WriteLine($"Наименьшее число в массиве = {minNum}");
-
-
-
-
         }
     }
 }
