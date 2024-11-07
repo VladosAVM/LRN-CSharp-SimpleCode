@@ -81,6 +81,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "006 - ДЗ к уроку 02
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "027 - Работа с массивами в реальных проектах - Примеры", "001 - Lessons\027 - Работа с массивами в реальных проектах - Примеры\027 - Работа с массивами в реальных проектах - Примеры.csproj", "{C69E115F-C1B4-4852-A496-CF1C107232A4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "028 - Индексы и диапазоны", "028 - Индексы и диапазоны\028 - Индексы и диапазоны.csproj", "{A9545908-56DE-4F08-800D-0B2F7154DBA3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -223,6 +225,10 @@ Global
 		{C69E115F-C1B4-4852-A496-CF1C107232A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C69E115F-C1B4-4852-A496-CF1C107232A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C69E115F-C1B4-4852-A496-CF1C107232A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9545908-56DE-4F08-800D-0B2F7154DBA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9545908-56DE-4F08-800D-0B2F7154DBA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9545908-56DE-4F08-800D-0B2F7154DBA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9545908-56DE-4F08-800D-0B2F7154DBA3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -262,6 +268,7 @@ Global
 		{BF52A4E3-BB66-4A8C-B051-B5E772F6452C} = {08017CE6-7599-4266-92C3-67685BCE0973}
 		{85BD1A7B-7A7A-4F54-A85A-0712F50B984A} = {E4F32F9C-5B4E-4F96-A45E-DA8FFB7C4E5B}
 		{C69E115F-C1B4-4852-A496-CF1C107232A4} = {08017CE6-7599-4266-92C3-67685BCE0973}
+		{A9545908-56DE-4F08-800D-0B2F7154DBA3} = {08017CE6-7599-4266-92C3-67685BCE0973}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5131EB3F-3A15-4D42-8167-54A12762E996}
