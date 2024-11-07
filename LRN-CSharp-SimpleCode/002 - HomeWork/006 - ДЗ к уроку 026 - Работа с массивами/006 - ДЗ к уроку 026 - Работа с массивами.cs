@@ -2,7 +2,10 @@
 
 /* ДЗ к уроку 026 - Работа с массивами
  * 
- * Разбор: https://www.youtube.com/watch?v=7rcwQQT2txY
+ * Разбор: https://www.youtube.com/watch?v=7rcwQQT2txY - заполнение массива с консоли
+ * Разбор: https://www.youtube.com/watch?v=3af3DiaUL8g - вывод массива в обратном порядке
+ * Разбор: https://www.youtube.com/watch?v=0nr8wRRMeTw - сумма 4ётных чисел в массиве
+ * Разбор: https://www.youtube.com/watch?v=YN7P5y12FfE - поиск наименьшего элемента в массиве
  */
 
 namespace _006___ДЗ_к_уроку_026___Работа_с_массивами
