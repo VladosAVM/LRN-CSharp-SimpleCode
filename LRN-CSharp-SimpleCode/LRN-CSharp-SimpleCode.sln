@@ -79,6 +79,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "026 - Вывод масси
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "006 - ДЗ к уроку 026 - Работа с массивами", "002 - HomeWork\006 - ДЗ к уроку 026 - Работа с массивами\006 - ДЗ к уроку 026 - Работа с массивами.csproj", "{85BD1A7B-7A7A-4F54-A85A-0712F50B984A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "027 - Работа с массивами в реальных проектах - Примеры", "001 - Lessons\027 - Работа с массивами в реальных проектах - Примеры\027 - Работа с массивами в реальных проектах - Примеры.csproj", "{C69E115F-C1B4-4852-A496-CF1C107232A4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -217,6 +219,10 @@ Global
 		{85BD1A7B-7A7A-4F54-A85A-0712F50B984A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{85BD1A7B-7A7A-4F54-A85A-0712F50B984A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{85BD1A7B-7A7A-4F54-A85A-0712F50B984A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C69E115F-C1B4-4852-A496-CF1C107232A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C69E115F-C1B4-4852-A496-CF1C107232A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C69E115F-C1B4-4852-A496-CF1C107232A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C69E115F-C1B4-4852-A496-CF1C107232A4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -255,6 +261,7 @@ Global
 		{19B874CA-552A-4445-A44A-318502DED378} = {08017CE6-7599-4266-92C3-67685BCE0973}
 		{BF52A4E3-BB66-4A8C-B051-B5E772F6452C} = {08017CE6-7599-4266-92C3-67685BCE0973}
 		{85BD1A7B-7A7A-4F54-A85A-0712F50B984A} = {E4F32F9C-5B4E-4F96-A45E-DA8FFB7C4E5B}
+		{C69E115F-C1B4-4852-A496-CF1C107232A4} = {08017CE6-7599-4266-92C3-67685BCE0973}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5131EB3F-3A15-4D42-8167-54A12762E996}
