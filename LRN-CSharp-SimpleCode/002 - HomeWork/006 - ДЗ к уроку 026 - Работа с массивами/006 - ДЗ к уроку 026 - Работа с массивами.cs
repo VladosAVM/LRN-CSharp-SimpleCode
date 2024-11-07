@@ -11,9 +11,11 @@ namespace _006___ДЗ_к_уроку_026___Работа_с_массивами
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("- Заполнение массива с клавиатуры -");
+            Console.Write("- Заполнение массива с клавиатуры -" +
+                          "\nУкажите размер массива: ");
 
-            int[] hwArray = new int[4];
+            int arrayLength = int.Parse(Console.ReadLine());
+            int[] hwArray = new int[arrayLength];
             for (int i = 0; i < hwArray.Length; i++)
             {
                 Console.Write($"Введите данные для элемента массива под индексом {i} :");
