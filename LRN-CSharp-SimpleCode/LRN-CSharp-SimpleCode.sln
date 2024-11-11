@@ -87,6 +87,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "029 - Многомерны�
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "030 - Двумерный массив", "001 - Lessons\030 - Двумерный массив\030 - Двумерный массив.csproj", "{A562D10D-D969-42BC-A1F8-85715D8098BE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "031 - Вывод двумерного массива", "001 - Lessons\031 - Вывод двумерного массива\031 - Вывод двумерного массива.csproj", "{E94A44DF-DC7F-46C2-A264-826B59BE9AA3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -241,6 +243,10 @@ Global
 		{A562D10D-D969-42BC-A1F8-85715D8098BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A562D10D-D969-42BC-A1F8-85715D8098BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A562D10D-D969-42BC-A1F8-85715D8098BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E94A44DF-DC7F-46C2-A264-826B59BE9AA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E94A44DF-DC7F-46C2-A264-826B59BE9AA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E94A44DF-DC7F-46C2-A264-826B59BE9AA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E94A44DF-DC7F-46C2-A264-826B59BE9AA3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -283,6 +289,7 @@ Global
 		{4CC6AF24-ECAB-42EA-830A-74F126DA118E} = {08017CE6-7599-4266-92C3-67685BCE0973}
 		{8660BDA0-DBEF-4B96-A792-47D0D2CBAEE2} = {08017CE6-7599-4266-92C3-67685BCE0973}
 		{A562D10D-D969-42BC-A1F8-85715D8098BE} = {08017CE6-7599-4266-92C3-67685BCE0973}
+		{E94A44DF-DC7F-46C2-A264-826B59BE9AA3} = {08017CE6-7599-4266-92C3-67685BCE0973}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5131EB3F-3A15-4D42-8167-54A12762E996}
