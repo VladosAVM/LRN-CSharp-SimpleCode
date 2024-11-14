@@ -93,6 +93,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "032 - Зполнение д
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "033 - Ступенчатые (зубчатые) массивы", "001 - Lessons\033 - Ступенчатые (зубчатые) массивы\033 - Ступенчатые (зубчатые) массивы.csproj", "{A70654E8-EE56-42D5-B7C6-94E91A92CB2D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "034 - Трёхмерные массивы", "001 - Lessons\034 - Трёхмерные массивы\034 - Трёхмерные массивы.csproj", "{DCCFDB7E-845B-4662-B4CF-1B0DFD01B216}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -259,6 +261,10 @@ Global
 		{A70654E8-EE56-42D5-B7C6-94E91A92CB2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A70654E8-EE56-42D5-B7C6-94E91A92CB2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A70654E8-EE56-42D5-B7C6-94E91A92CB2D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DCCFDB7E-845B-4662-B4CF-1B0DFD01B216}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCCFDB7E-845B-4662-B4CF-1B0DFD01B216}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCCFDB7E-845B-4662-B4CF-1B0DFD01B216}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCCFDB7E-845B-4662-B4CF-1B0DFD01B216}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -304,6 +310,7 @@ Global
 		{E94A44DF-DC7F-46C2-A264-826B59BE9AA3} = {08017CE6-7599-4266-92C3-67685BCE0973}
 		{1DC89FDD-D2E3-4C5E-8F8F-0775045AC733} = {08017CE6-7599-4266-92C3-67685BCE0973}
 		{A70654E8-EE56-42D5-B7C6-94E91A92CB2D} = {08017CE6-7599-4266-92C3-67685BCE0973}
+		{DCCFDB7E-845B-4662-B4CF-1B0DFD01B216} = {08017CE6-7599-4266-92C3-67685BCE0973}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5131EB3F-3A15-4D42-8167-54A12762E996}
