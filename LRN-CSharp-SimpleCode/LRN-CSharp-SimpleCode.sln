@@ -113,6 +113,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "040 - Оператор об
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "041 - Оператор присвоения объединения с null", "001 - Lessons\041 - Оператор присвоения объединения с null\041 - Оператор присвоения объединения с null.csproj", "{69F7BB52-E418-491A-8A04-8BC421AC1E3E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "042 - Оператор условного null", "001 - Lessons\042 - Оператор условного null\042 - Оператор условного null.csproj", "{3D1206CB-1A0F-4626-A832-A07A0FA3A2E0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -319,6 +321,10 @@ Global
 		{69F7BB52-E418-491A-8A04-8BC421AC1E3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{69F7BB52-E418-491A-8A04-8BC421AC1E3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{69F7BB52-E418-491A-8A04-8BC421AC1E3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D1206CB-1A0F-4626-A832-A07A0FA3A2E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D1206CB-1A0F-4626-A832-A07A0FA3A2E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D1206CB-1A0F-4626-A832-A07A0FA3A2E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D1206CB-1A0F-4626-A832-A07A0FA3A2E0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -374,6 +380,7 @@ Global
 		{6E63BF1A-DB74-4055-A1C1-C027FE7CE718} = {08017CE6-7599-4266-92C3-67685BCE0973}
 		{E9A12A3D-91B3-4B78-B482-9370C2909A4C} = {08017CE6-7599-4266-92C3-67685BCE0973}
 		{69F7BB52-E418-491A-8A04-8BC421AC1E3E} = {08017CE6-7599-4266-92C3-67685BCE0973}
+		{3D1206CB-1A0F-4626-A832-A07A0FA3A2E0} = {08017CE6-7599-4266-92C3-67685BCE0973}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5131EB3F-3A15-4D42-8167-54A12762E996}
