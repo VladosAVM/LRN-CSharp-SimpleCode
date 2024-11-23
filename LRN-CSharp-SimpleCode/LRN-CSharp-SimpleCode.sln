@@ -117,6 +117,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "042 - Оператор ус
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "043 - REF - Ключевое слово", "001 - Lessons\043 - REF - Ключевое слово\043 - REF - Ключевое слово.csproj", "{209EA614-1D58-4875-93A7-D89856F7369D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "008 - ДЗ к уроку 043 - Изменение размеров массива", "002 - HomeWork\008 - ДЗ к уроку 043 - Изменение размеров массива\008 - ДЗ к уроку 043 - Изменение размеров массива.csproj", "{EF831812-AB1D-4D6E-B3A9-F76975896188}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -331,6 +333,10 @@ Global
 		{209EA614-1D58-4875-93A7-D89856F7369D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{209EA614-1D58-4875-93A7-D89856F7369D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{209EA614-1D58-4875-93A7-D89856F7369D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF831812-AB1D-4D6E-B3A9-F76975896188}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF831812-AB1D-4D6E-B3A9-F76975896188}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF831812-AB1D-4D6E-B3A9-F76975896188}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF831812-AB1D-4D6E-B3A9-F76975896188}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -388,6 +394,7 @@ Global
 		{69F7BB52-E418-491A-8A04-8BC421AC1E3E} = {08017CE6-7599-4266-92C3-67685BCE0973}
 		{3D1206CB-1A0F-4626-A832-A07A0FA3A2E0} = {08017CE6-7599-4266-92C3-67685BCE0973}
 		{209EA614-1D58-4875-93A7-D89856F7369D} = {08017CE6-7599-4266-92C3-67685BCE0973}
+		{EF831812-AB1D-4D6E-B3A9-F76975896188} = {E4F32F9C-5B4E-4F96-A45E-DA8FFB7C4E5B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5131EB3F-3A15-4D42-8167-54A12762E996}
