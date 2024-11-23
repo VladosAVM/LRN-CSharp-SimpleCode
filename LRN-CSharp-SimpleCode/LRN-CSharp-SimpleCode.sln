@@ -121,6 +121,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "008 - ДЗ к уроку 04
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "044 - OUT - Ключевое слово", "001 - Lessons\044 - OUT - Ключевое слово\044 - OUT - Ключевое слово.csproj", "{79BFA3AD-3D4F-4FAE-A60D-79D5EC98DF4C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "045 - IN - Ключевое слово", "001 - Lessons\045 - IN - Ключевое слово\045 - IN - Ключевое слово.csproj", "{DB8BA2E3-7FB4-41C2-965E-D82384FF3AD2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -343,6 +345,10 @@ Global
 		{79BFA3AD-3D4F-4FAE-A60D-79D5EC98DF4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{79BFA3AD-3D4F-4FAE-A60D-79D5EC98DF4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{79BFA3AD-3D4F-4FAE-A60D-79D5EC98DF4C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB8BA2E3-7FB4-41C2-965E-D82384FF3AD2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB8BA2E3-7FB4-41C2-965E-D82384FF3AD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB8BA2E3-7FB4-41C2-965E-D82384FF3AD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB8BA2E3-7FB4-41C2-965E-D82384FF3AD2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -402,6 +408,7 @@ Global
 		{209EA614-1D58-4875-93A7-D89856F7369D} = {08017CE6-7599-4266-92C3-67685BCE0973}
 		{EF831812-AB1D-4D6E-B3A9-F76975896188} = {E4F32F9C-5B4E-4F96-A45E-DA8FFB7C4E5B}
 		{79BFA3AD-3D4F-4FAE-A60D-79D5EC98DF4C} = {08017CE6-7599-4266-92C3-67685BCE0973}
+		{DB8BA2E3-7FB4-41C2-965E-D82384FF3AD2} = {08017CE6-7599-4266-92C3-67685BCE0973}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5131EB3F-3A15-4D42-8167-54A12762E996}
