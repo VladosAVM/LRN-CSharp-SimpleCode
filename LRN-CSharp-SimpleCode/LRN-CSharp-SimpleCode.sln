@@ -127,6 +127,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "046 - PARAMS - Ключев
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "047 - Параметры по умолчанию - Необязательные", "001 - Lessons\047 - Параметры по умолчанию - Необязательные\047 - Параметры по умолчанию - Необязательные.csproj", "{FD92D2E2-7FF0-4073-9917-C441B8ED46EE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "048 - Именованные параметры", "001 - Lessons\048 - Именованные параметры\048 - Именованные параметры.csproj", "{62A4CC18-1664-4E83-984A-17635E76A8D5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -361,6 +363,10 @@ Global
 		{FD92D2E2-7FF0-4073-9917-C441B8ED46EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FD92D2E2-7FF0-4073-9917-C441B8ED46EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FD92D2E2-7FF0-4073-9917-C441B8ED46EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62A4CC18-1664-4E83-984A-17635E76A8D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62A4CC18-1664-4E83-984A-17635E76A8D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62A4CC18-1664-4E83-984A-17635E76A8D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62A4CC18-1664-4E83-984A-17635E76A8D5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -423,6 +429,7 @@ Global
 		{DB8BA2E3-7FB4-41C2-965E-D82384FF3AD2} = {08017CE6-7599-4266-92C3-67685BCE0973}
 		{DB5C096C-69EB-43A8-AF34-C5BE9433551F} = {08017CE6-7599-4266-92C3-67685BCE0973}
 		{FD92D2E2-7FF0-4073-9917-C441B8ED46EE} = {08017CE6-7599-4266-92C3-67685BCE0973}
+		{62A4CC18-1664-4E83-984A-17635E76A8D5} = {08017CE6-7599-4266-92C3-67685BCE0973}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5131EB3F-3A15-4D42-8167-54A12762E996}
