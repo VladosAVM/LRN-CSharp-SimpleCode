@@ -133,6 +133,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "049 - Рекурсия - П
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "009 - ДЗ к уроку 049 - Использование рекурсии", "002 - HomeWork\009 - ДЗ к уроку 049 - Использование рекурсии\009 - ДЗ к уроку 049 - Использование рекурсии.csproj", "{5B730580-543C-41A8-9F11-EC8282A6A272}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "050 - Приведение (преобразование) типов - Явное, НЕявное", "001 - Lessons\050 - Приведение (преобразование) типов - Явное, НЕявное\050 - Приведение (преобразование) типов - Явное, НЕявное.csproj", "{4D0E621A-2A20-4183-9B00-F5E728C6BE74}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -379,6 +381,10 @@ Global
 		{5B730580-543C-41A8-9F11-EC8282A6A272}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5B730580-543C-41A8-9F11-EC8282A6A272}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5B730580-543C-41A8-9F11-EC8282A6A272}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D0E621A-2A20-4183-9B00-F5E728C6BE74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D0E621A-2A20-4183-9B00-F5E728C6BE74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D0E621A-2A20-4183-9B00-F5E728C6BE74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D0E621A-2A20-4183-9B00-F5E728C6BE74}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -444,6 +450,7 @@ Global
 		{62A4CC18-1664-4E83-984A-17635E76A8D5} = {08017CE6-7599-4266-92C3-67685BCE0973}
 		{0BB3CCBA-2304-4B0E-973A-F9B91EC100A1} = {08017CE6-7599-4266-92C3-67685BCE0973}
 		{5B730580-543C-41A8-9F11-EC8282A6A272} = {E4F32F9C-5B4E-4F96-A45E-DA8FFB7C4E5B}
+		{4D0E621A-2A20-4183-9B00-F5E728C6BE74} = {08017CE6-7599-4266-92C3-67685BCE0973}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5131EB3F-3A15-4D42-8167-54A12762E996}

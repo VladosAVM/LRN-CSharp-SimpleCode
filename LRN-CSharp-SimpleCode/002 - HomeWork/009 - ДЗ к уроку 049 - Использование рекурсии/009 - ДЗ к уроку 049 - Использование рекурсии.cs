@@ -31,7 +31,7 @@ namespace _009___ДЗ_к_уроку_049___Использование_рекур�
         }
 
         // Задача 3
-        static int SumOfInteger(int num)
+        static int SumOfInteger1(int num)
         {
             if (num < 10)
                 return num;
@@ -39,7 +39,7 @@ namespace _009___ДЗ_к_уроку_049___Использование_рекур�
             int digit = num % 10; // Получить последнюю цифру числа
             int newNum = num / 10; // Уменшить число на десяток
             
-            return SumOfInteger(newNum) + digit;
+            return SumOfInteger1(newNum) + digit;
         }
         static int SumOfInteger2(int num)
         {
@@ -69,8 +69,9 @@ namespace _009___ДЗ_к_уроку_049___Использование_рекур�
             // Задача 3
             Console.WriteLine("\nЗадача 3");
             int i = 151;
-            int result2 = SumOfInteger(i);
+            int result2 = SumOfInteger1(i);
             Console.WriteLine(result2);
+            
 
         }
     }
