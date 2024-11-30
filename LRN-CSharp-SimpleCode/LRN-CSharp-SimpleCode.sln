@@ -135,6 +135,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "009 - ДЗ к уроку 04
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "050 - Приведение (преобразование) типов - Явное, НЕявное", "001 - Lessons\050 - Приведение (преобразование) типов - Явное, НЕявное\050 - Приведение (преобразование) типов - Явное, НЕявное.csproj", "{4D0E621A-2A20-4183-9B00-F5E728C6BE74}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "051 - Арифметическое переполнение - Checked Unchecked", "001 - Lessons\051 - Арифметическое переполнение - Checked Unchecked\051 - Арифметическое переполнение - Checked Unchecked.csproj", "{39279B43-7379-47C3-89ED-1A4A0CF98872}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -385,6 +387,10 @@ Global
 		{4D0E621A-2A20-4183-9B00-F5E728C6BE74}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4D0E621A-2A20-4183-9B00-F5E728C6BE74}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4D0E621A-2A20-4183-9B00-F5E728C6BE74}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39279B43-7379-47C3-89ED-1A4A0CF98872}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39279B43-7379-47C3-89ED-1A4A0CF98872}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39279B43-7379-47C3-89ED-1A4A0CF98872}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39279B43-7379-47C3-89ED-1A4A0CF98872}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -451,6 +457,7 @@ Global
 		{0BB3CCBA-2304-4B0E-973A-F9B91EC100A1} = {08017CE6-7599-4266-92C3-67685BCE0973}
 		{5B730580-543C-41A8-9F11-EC8282A6A272} = {E4F32F9C-5B4E-4F96-A45E-DA8FFB7C4E5B}
 		{4D0E621A-2A20-4183-9B00-F5E728C6BE74} = {08017CE6-7599-4266-92C3-67685BCE0973}
+		{39279B43-7379-47C3-89ED-1A4A0CF98872} = {08017CE6-7599-4266-92C3-67685BCE0973}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5131EB3F-3A15-4D42-8167-54A12762E996}
