@@ -141,6 +141,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "052 - NULLABLE - null со�
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "053 - VAR - Не тип данных", "001 - Lessons\053 - VAR - Не тип данных\053 - VAR - Не тип данных.csproj", "{6044E7FE-711A-4A67-A822-DC281CAC915D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "054 - ENUM", "001 - Lessons\054 - ENUM\054 - ENUM.csproj", "{3A028517-897B-410B-9105-4961D251AE6A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -403,6 +405,10 @@ Global
 		{6044E7FE-711A-4A67-A822-DC281CAC915D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6044E7FE-711A-4A67-A822-DC281CAC915D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6044E7FE-711A-4A67-A822-DC281CAC915D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A028517-897B-410B-9105-4961D251AE6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A028517-897B-410B-9105-4961D251AE6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A028517-897B-410B-9105-4961D251AE6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A028517-897B-410B-9105-4961D251AE6A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -472,6 +478,7 @@ Global
 		{39279B43-7379-47C3-89ED-1A4A0CF98872} = {08017CE6-7599-4266-92C3-67685BCE0973}
 		{D3463865-1DCE-447B-9A41-90AF58A3FCB5} = {08017CE6-7599-4266-92C3-67685BCE0973}
 		{6044E7FE-711A-4A67-A822-DC281CAC915D} = {08017CE6-7599-4266-92C3-67685BCE0973}
+		{3A028517-897B-410B-9105-4961D251AE6A} = {08017CE6-7599-4266-92C3-67685BCE0973}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5131EB3F-3A15-4D42-8167-54A12762E996}
