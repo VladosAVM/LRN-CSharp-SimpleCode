@@ -123,13 +123,14 @@ namespace _054___ENUM
                 Console.WriteLine(item);
 
             Console.WriteLine("\n\n-------------------------------\n\n");
-           
+
             // Парсинг значений в enum
             // Парсинг enum работает идентично методу int.Parse() который был разобран в начале курса.
             // Метод Enum.Parse() принимает в качестве аргументов:
             //      1. Тип Enum
             //      2. Строку с данными которые необходимо найти
             //      3. Модификатор включения/отключения учёта регистра значений данных
+            Console.Write("Введите цвет для поиска в enum: ");
             string str = Console.ReadLine();
             Colors color = (Colors)Enum.Parse(typeof(Colors), str, ignoreCase: true);
             Console.WriteLine(color);
