@@ -33,15 +33,19 @@ namespace _044___OUT___Ключевое_слово
              * в методв (внутри метода).
              */
 
+            // REF
+            // Обязательное присвоение значения при передаче переменной в метод с использованием REF
             // int testRefInt; // Ошибка, переменной не присвоено значение
             int testRefInt = 10;
             TestRef(ref testRefInt);
             Console.WriteLine($"Переменная testRefInt = {testRefInt}");
 
             // TestRef(ref int x); // Ошибка
-                                   // Переменную с ключевым словом ref нельзя
-                                   // определить прямо в параметрах вызова метода
-
+            // Переменную с ключевым словом ref нельзя
+            // определить прямо в параметрах вызова метода
+            
+            // OUT
+            // НЕобязательное присвоение значения при передаче переменной в метод с использованием OUT
             int testOutInt;  // Переменной передоваемой с помощью out
                              // не обязательно присваивать значение
             testOutInt = 10; // однако можно и присвоить значение перед
@@ -59,8 +63,16 @@ namespace _044___OUT___Ключевое_слово
             Console.Write("\nВведите данные: ");
 
             string str = Console.ReadLine();
-            int.TryParse(str, out int result);
-            Console.WriteLine($"result = {result}");
+            int.TryParse(str, out int result1);
+            Console.WriteLine($"result = {result1}");
+
+            // ИЛИ
+            Console.Write("\nВведите данные: ");
+
+            int.TryParse(Console.ReadLine(), out int result2);
+            Console.WriteLine($"result = {result2}");
+
+
         }
     }
 }

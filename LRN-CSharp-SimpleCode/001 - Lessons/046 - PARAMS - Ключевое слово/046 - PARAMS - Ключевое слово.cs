@@ -10,21 +10,58 @@ namespace _046___PARAMS___Ключевое_слово
 {
     internal class Program
     {
+        /// <summary>
+        /// Вывод всех передоваемых переменных с инфрмацией об их типе данных и значении.
+        /// </summary>
+        /// <param name="parameters"></param>
         static void Test(params object[] parameters)
         {
             string message = "Тип данных: {0}, \tЗначение: {1}";
 
             foreach (var item in parameters)
-                Console.WriteLine(message, item.GetType(), item);
+                Console.WriteLine(message, item.GetType().Name, item);
         }
-        static int Sum(params int[] parameters)
+
+        /// <summary>
+        /// Суммирует неограниченное число переменных.
+        /// </summary>
+        /// <param name="parameters"></param>
+        /// <returns></returns>
+        static int Sum1(params int[] parameters)
         {
             int result = 0;
 
-            for (int i = 0; i<parameters.Length; i++)
+            for (int i = 0; i < parameters.Length; i++)
                 result += parameters[i];
 
             return result;
+        }
+
+        /// <summary>
+        /// Сумма неограниченного числа переменных разного типа.
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="parametrs"></param>
+        /// <returns></returns>
+        static T Sum2<T>(params T[] parametrs)
+        {
+            dynamic sum = default(T);
+
+            for (int i = 0; i < parametrs.Length; i++)
+                sum += parametrs[i];
+
+            return sum;
+        }
+        /// <summary>
+        /// <para>Заглушка для вызова метода без передачи параметров.</para>
+        /// <para>Возвращает 0.</para>
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="parametrs"></param>
+        /// <returns></returns>
+        static int Sum2()
+        {
+            return 0;
         }
         static void Main(string[] args)
         {
@@ -42,11 +79,11 @@ namespace _046___PARAMS___Ключевое_слово
             int c = 3;
             int d = 4;
             int e = 5;
-            Console.WriteLine(Sum(a, b));
-            Console.WriteLine(Sum(a, b, c, d, e));
-            Console.WriteLine(Sum(a, b, c, 5));
-
-            
+            Console.WriteLine(Sum1(a, b));
+            Console.WriteLine(Sum1(a, b, c, d, e));
+            Console.WriteLine(Sum1(a, b, c, 5));
+            Console.WriteLine(Sum2(a, b, c, 5, 4.6));
+            Console.WriteLine(Sum2());
             Console.WriteLine();
 
             Test("test", 5, 'q', 5.89f, true);

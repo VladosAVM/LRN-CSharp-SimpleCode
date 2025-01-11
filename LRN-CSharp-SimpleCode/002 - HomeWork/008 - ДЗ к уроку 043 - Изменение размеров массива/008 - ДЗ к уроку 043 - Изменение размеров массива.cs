@@ -114,7 +114,7 @@ namespace _008___ДЗ_к_уроку_043___Изменение_размеров_м
             PrintArray(testArray2);
             Console.Write("\nУкажите зачение новго элемента: ");
             elementValue = int.Parse(Console.ReadLine());
-            Console.Write("\nУкажите индекс в массиве: ");
+            Console.Write($"\nУкажите индекс в массиве от 0 до {testArray2.Length}: ");
             int newElementIndex = int.Parse(Console.ReadLine());
             ArrayAddElementByIndex(ref testArray2, elementValue, newElementIndex);
             Console.Write($"Массив с новым элементом под индексом {newElementIndex}: ");
@@ -147,7 +147,7 @@ namespace _008___ДЗ_к_уроку_043___Изменение_размеров_м
             Console.Write("\n\n\n--- Удаление элемента массива по индексу ---\n" +
                               "Текущий массив: ");
             PrintArray(testArray3);
-            Console.Write($"\nУкажите индекс элемента который необходимо удалить: ");
+            Console.Write($"\nУкажите индекс элемента который необходимо удалить от 0 до {testArray3.Length - 1}: ");
             int deleteElementIndex = int.Parse(Console.ReadLine());
             ArrayDeleteElementByIndex(ref testArray3, deleteElementIndex);
             Console.Write($"\nМассив после удаления элемента под индексом {deleteElementIndex}: ");
