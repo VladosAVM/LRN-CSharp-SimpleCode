@@ -9,7 +9,9 @@ namespace _054___ENUM
 {
     internal class Program
     {
-        // enum дней недели
+        /// <summary>
+        /// enum дней недели
+        /// </summary>
         enum DayOfWeek : byte
         {
             Monday = 1,
@@ -21,7 +23,10 @@ namespace _054___ENUM
             Sunday
         }
 
-        // enum цветов
+
+        /// <summary>
+        /// enum цветов
+        /// </summary>
         enum Colors
         {
             White,
@@ -30,7 +35,75 @@ namespace _054___ENUM
             Blue,
             Orange
         }
-        // Получение следующего дня недели
+
+
+        /// <summary>
+        /// // Обычная версия с передачей аргумента
+        /// </summary>
+        /// <param name="enumType"></param>
+        static void PrintEnum(Type enumType)
+        {
+            if (!enumType.IsEnum)
+            {
+                Console.WriteLine($"При вызове метода 'PrintEnum', возникла ошибка\n" +
+                                  $"{enumType} не является enum\n" +
+                                  $"Тип {enumType} = {enumType.GetType()}");
+                return;
+            }
+            
+            var values = Enum.GetValues((enumType));
+
+            for (var i = 0; i < values.Length; i++)
+            {
+                if (i < values.Length - 1)
+                    Console.Write($"{values.GetValue(i)}, ");
+                else
+                    Console.Write($"{values.GetValue(i)}.");
+            }
+
+            // Сокращённый вариант для перебора значений enum для
+            // вывода на консоль с использование тернарного оператора
+            /*
+            for (var i = 0; i < values.Length; i++)
+                Console.Write($"{values.GetValue(i)}{(i < values.Length - 1 ? ", " : ".")}");
+            */
+
+            Console.WriteLine();
+        }
+
+
+        /// <summary>
+        /// Вывод всех значений enum в консоль - Дженерик версия принимающая в качестве аргумента только enum
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        static void PrintEnum<T>() where T : Enum        
+        {
+            var values = Enum.GetValues(typeof(T));           
+
+            for (var i = 0; i < values.Length; i++)
+            {
+                if (i < values.Length - 1)
+                    Console.Write($"{values.GetValue(i)}, ");
+                else
+                    Console.Write($"{values.GetValue(i)}.");
+            }
+
+            // Сокращённый вариант для перебора значений enum для
+            // вывода на консоль с использование тернарного оператора
+            /*
+            for (var i = 0; i < values.Length; i++)
+                Console.Write($"{values.GetValue(i)}{(i < values.Length - 1 ? ", " : ".")}");
+            */
+
+            Console.WriteLine();
+        }
+
+
+        /// <summary>
+        /// Получение следующего дня недели
+        /// </summary>
+        /// <param name="day"></param>
+        /// <returns></returns>
         static DayOfWeek GetNextDay(DayOfWeek day)
         {
             if (day < DayOfWeek.Sunday)
@@ -38,6 +111,10 @@ namespace _054___ENUM
 
             return DayOfWeek.Monday;
         }
+
+
+
+
         static void Main(string[] args)
         {
             // ENUM это структура содержащая в себе понятное человеку представление числовых значений.
@@ -96,9 +173,9 @@ namespace _054___ENUM
 
             Console.WriteLine("\n\n-------------------------------\n\n");
             // При попытке обращения к enum DayOfWeek со значением которого нет в полях,
-            // мы сломаем всю логику и не получим какогото вменяемого ответа.
+            // мы сломаем всю логику и не получим какого-то вменяемого ответа.
             // Такое может происходит при получении данных из-вне.
-            // Для решения даннойпроблемы можно использовать метод IsDefiend который
+            // Для решения данной проблемы можно использовать метод IsDefiend, который
             // проверит наличие соответствующего элемента в enum и возвращает true или false.
 
             int value = 55;
@@ -130,12 +207,19 @@ namespace _054___ENUM
             //      1. Тип Enum
             //      2. Строку с данными которые необходимо найти
             //      3. Модификатор включения/отключения учёта регистра значений данных
-            Console.Write("Введите цвет для поиска в enum: ");
+
+            
+            Console.WriteLine($"Список доуступных цветов:");
+
+            //PrintEnum<Colors>(); // Дженерик версия принимающая только enum
+            PrintEnum(typeof(Colors)); // Обычная версия с передачей аргумента
+
+            Console.WriteLine($"Введите цвет для поиска в enum: ");
             string str = Console.ReadLine();
             Colors color = (Colors)Enum.Parse(typeof(Colors), str, ignoreCase: true);
             Console.WriteLine(color);
 
-            // Также у Enum есть метод TryParse который работает аналогично метода int.TryParse()
+            // Также у Enum есть метод TryParse который работает аналогично методу int.TryParse()
 
 
         }

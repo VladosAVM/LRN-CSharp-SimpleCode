@@ -3,7 +3,7 @@
 /* NULLABLE - null совместимые значимые типы
  * 
  * Источник: https://www.youtube.com/watch?v=jhz3Ltc09m4
-  */
+ */
 
 namespace _052___NULLABLE___null_совместимые_значимые_типы
 {
@@ -60,6 +60,7 @@ namespace _052___NULLABLE___null_совместимые_значимые_тип�
             Console.WriteLine(x == y); // false
             Console.WriteLine(x >= y); // false
             Console.WriteLine(x < y);  // false
+            Console.WriteLine(x != y); // True
 
             y = 7;
             result = x + y;
@@ -67,6 +68,7 @@ namespace _052___NULLABLE___null_совместимые_значимые_тип�
             Console.WriteLine(x == y); // true
             Console.WriteLine(x >= y); // true
             Console.WriteLine(x < y);  // false
+            Console.WriteLine(x != y); // false
         }
     }
 }
