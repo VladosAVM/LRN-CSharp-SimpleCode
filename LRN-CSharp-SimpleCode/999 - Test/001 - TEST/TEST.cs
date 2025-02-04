@@ -7,16 +7,48 @@ namespace _001___TEST
 {
     internal class Program
     {
+        static int[,] GetRandomArr2D(ref int[,] arr, int minValue, int maxValue)
+        {
+            Random rnd = new Random();
+
+            for (int i = 0; i < arr.GetLength(0); i++)
+            {
+                for (int j = 0; j < arr.GetLength(1); j++)
+                {
+                    arr[i,j] = rnd.Next(minValue, maxValue);
+                }
+            }
+
+            return arr;
+        }
         /// <summary>
-        /// <para>Вывод значений массива в консоль.</para>
-        /// <para>Print array values in console.</para>
+        /// <para>Вывод значений одномерного массива в консоль.</para>
+        /// <para>Print 1D array values in console.</para>
         /// </summary>
         /// <param name="arr">Массив значений для вывода в консоль.</param>
-        static void PrintArr(int[] arr)
+        static void PrintArr1D(int[] arr)
         {
             for (int i = 0; i < arr.Length; i++)
                 Console.Write($"{arr[i]} ");
         }
+
+        /// <summary>
+        /// <para>Вывод значений двумерного массива в консоль.</para>
+        /// <para>Print 2D array values in console.</para>
+        /// </summary>
+        /// <param name="arr">Массив значений для вывода в консоль.</param>
+        static void PrintArr2D(int[,] arr)
+        {
+            for (int i = 0; i < arr.GetLength(0); i++)
+            {
+                for (int j = 0; j < arr.GetLength(1); j++)
+                {
+                    Console.Write($"{arr[i, j]} ");
+                }
+                Console.WriteLine();
+            }
+        }
+
         /// <summary>
         /// Генератор одномерного массива со случаными значениями.
         /// </summary>
@@ -96,6 +128,11 @@ namespace _001___TEST
 
         static void Main(string[] args)
         {
+            int[,] arr = new int[8, 8];
+
+            GetRandomArr2D(ref arr, 1, 6);
+            PrintArr2D(arr);
+
             
         }
     }

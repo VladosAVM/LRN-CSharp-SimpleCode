@@ -145,6 +145,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "054 - ENUM", "001 - Lessons
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "055 - CLASS", "001 - Lessons\055 - CLASS\055 - CLASS.csproj", "{D53328FA-51E3-4CD1-A279-399F44184377}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "056 - Методы экземпляра класса", "001 - Lessons\056 - Методы экземпляра класса\056 - Методы экземпляра класса.csproj", "{1C7FBCE2-462E-43BD-AF05-B7E0488B975D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -415,6 +417,10 @@ Global
 		{D53328FA-51E3-4CD1-A279-399F44184377}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D53328FA-51E3-4CD1-A279-399F44184377}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D53328FA-51E3-4CD1-A279-399F44184377}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C7FBCE2-462E-43BD-AF05-B7E0488B975D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C7FBCE2-462E-43BD-AF05-B7E0488B975D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C7FBCE2-462E-43BD-AF05-B7E0488B975D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C7FBCE2-462E-43BD-AF05-B7E0488B975D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -486,6 +492,7 @@ Global
 		{6044E7FE-711A-4A67-A822-DC281CAC915D} = {08017CE6-7599-4266-92C3-67685BCE0973}
 		{3A028517-897B-410B-9105-4961D251AE6A} = {08017CE6-7599-4266-92C3-67685BCE0973}
 		{D53328FA-51E3-4CD1-A279-399F44184377} = {08017CE6-7599-4266-92C3-67685BCE0973}
+		{1C7FBCE2-462E-43BD-AF05-B7E0488B975D} = {08017CE6-7599-4266-92C3-67685BCE0973}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5131EB3F-3A15-4D42-8167-54A12762E996}
