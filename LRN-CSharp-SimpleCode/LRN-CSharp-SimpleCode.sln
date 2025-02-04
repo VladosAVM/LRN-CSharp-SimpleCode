@@ -147,6 +147,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "055 - CLASS", "001 - Lesson
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "056 - Методы экземпляра класса", "001 - Lessons\056 - Методы экземпляра класса\056 - Методы экземпляра класса.csproj", "{1C7FBCE2-462E-43BD-AF05-B7E0488B975D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "057 - Public и Private модификаторы доступа", "001 - Lessons\057 - Public и Private модификаторы доступа\057 - Public и Private модификаторы доступа.csproj", "{AAF3347A-D19C-4419-BDCE-DC3FFF4C66A9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -421,6 +423,10 @@ Global
 		{1C7FBCE2-462E-43BD-AF05-B7E0488B975D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1C7FBCE2-462E-43BD-AF05-B7E0488B975D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1C7FBCE2-462E-43BD-AF05-B7E0488B975D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AAF3347A-D19C-4419-BDCE-DC3FFF4C66A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAF3347A-D19C-4419-BDCE-DC3FFF4C66A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAF3347A-D19C-4419-BDCE-DC3FFF4C66A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAF3347A-D19C-4419-BDCE-DC3FFF4C66A9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -493,6 +499,7 @@ Global
 		{3A028517-897B-410B-9105-4961D251AE6A} = {08017CE6-7599-4266-92C3-67685BCE0973}
 		{D53328FA-51E3-4CD1-A279-399F44184377} = {08017CE6-7599-4266-92C3-67685BCE0973}
 		{1C7FBCE2-462E-43BD-AF05-B7E0488B975D} = {08017CE6-7599-4266-92C3-67685BCE0973}
+		{AAF3347A-D19C-4419-BDCE-DC3FFF4C66A9} = {08017CE6-7599-4266-92C3-67685BCE0973}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5131EB3F-3A15-4D42-8167-54A12762E996}
