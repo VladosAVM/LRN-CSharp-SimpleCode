@@ -28,7 +28,7 @@ namespace _027___Работа_с_массивами_в_реальных_прое
              * статические методы для взаимодействия с массивом.
              *
              * Ниже по коду будут приведены некоторые примеры
-             * работы с массивамис использованием готовых библиотек.
+             * работы с массивами c использованием готовых библиотек.
              */
 
             // LinQ
@@ -37,39 +37,46 @@ namespace _027___Работа_с_массивами_в_реальных_прое
             int result;
             int[] resultArray;
 
-            result = testArray.Min();
+            result = testArray.Min(); // Минимальное значение в массиве
             Console.WriteLine($"Минимальное значение = {result}");
-            result = testArray.Max();
+            result = testArray.Max(); // Максимальное значение в массиве
             Console.WriteLine($"Максимальное значение = {result}");
 
-            result = testArray.Sum();
+            result = testArray.Sum(); // Сумма всех элементов массива
             Console.WriteLine($"Сумма всех элементов = {result}");
-            result = testArray.Where(x => x % 2 == 0).Sum();
+            result = testArray.Where(x => x % 2 == 0).Sum(); // Сумма всех 4ётных элементов массива
             Console.WriteLine($"Сумма всех чётных элементов = {result}");
-            result = testArray.Where(x => x % 2 != 0).Min();
+            result = testArray.Where(x => x % 2 != 0).Min(); // Самое маленькое не чётное число в массиве
             Console.WriteLine($"Самое маленькое не чтное число = {result}");
 
+            // Поиск всех уникальных(не повторяющихся) элементов в массиве
             Console.WriteLine("\nВытягивание уникальных элементов из testArray в resultArray");
             resultArray = testArray.Distinct().ToArray();
             for (int i = 0; i < resultArray.Length; i++)
                 Console.Write($" {resultArray[i]}");
 
+            // Сортировка массива в порядке возростания
             Console.WriteLine("\nСортировка массива в порядке возростания");
             resultArray = testArray.OrderBy(x => x).ToArray();
             for (int i = 0; i < resultArray.Length; i++)
                 Console.Write($" {resultArray[i]}");
 
+            // Сортировка массива в порядке убывания
             Console.WriteLine("\nСортировка массива в порядке убывания");
             resultArray = testArray.OrderByDescending(x => x).ToArray();
             for (int i = 0; i < resultArray.Length; i++)
                 Console.Write($" {resultArray[i]}");
 
+            // Поиск первого элемента в массиве с условием что он меньше 70
             result = testArray.Where(x => x < 70).First();
             Console.WriteLine($"\n\nПервый элемент который меньше 70 = {result}");
 
+            // Поиск первого элемента в массиве с условием что он меньше 0
+            // или возврат базового значения если элемент отсутствует в массиве
             result = testArray.Where(x => x < 0).FirstOrDefault();
             Console.WriteLine($"\n\nПервый элемент который меньше 0 = {result}");
 
+            // Поиск всех чисел в массиве которые меньше 70 и сохранение их в новый массив
             Console.WriteLine("\nПоиск всех чисел меньше 70");
             resultArray = testArray.Where(x => x < 70).ToArray();
             for (int i = 0; i < resultArray.Length; i++)

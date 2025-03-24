@@ -10,12 +10,12 @@ namespace _032___Зполнение_двумерного_массива
     {
         static void Main(string[] args)
         {
-            /* По сути заполнение двумерного массива отличается от
-             * одномерного только вложенностью циклов.
+            /* По сути, заполнение двумерного массива отличается от
+             * заполнения одномерного, только вложенностью циклов.
              */
-            bool autoArrayPhase = true;
+            bool phaseSwtich = true;
 
-            while (autoArrayPhase == true)
+            while (phaseSwtich == true)
             {
                 // Зполнение двумерного массива случайными числами
 
@@ -44,10 +44,10 @@ namespace _032___Зполнение_двумерного_массива
                 Console.WriteLine("\n\nНажмите Enter для перехода к ручному заполнению массива...");
                 Console.ReadLine();
 
-                autoArrayPhase = false; // Переменная перехода в другую фазу цикла
+                phaseSwtich = false; // Переменная перехода в другую фазу цикла
 
                 // Ручное заполнение двумерного массива
-                while (autoArrayPhase ==  false)
+                while (phaseSwtich == false)
                 {
                     Console.Clear();
 
@@ -92,7 +92,7 @@ namespace _032___Зполнение_двумерного_массива
                     Console.WriteLine("\n\nНажмите Enter для перехода к автоматическому заполнению массива...");
                     Console.ReadLine();
 
-                    autoArrayPhase = true;// Переменная перехода в другую фазу цикла
+                    phaseSwtich = true; // Переменная перехода в другую фазу цикла
                     Console.Clear();
                 }
             }

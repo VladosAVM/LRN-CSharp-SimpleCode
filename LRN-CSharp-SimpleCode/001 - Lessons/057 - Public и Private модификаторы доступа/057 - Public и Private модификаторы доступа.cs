@@ -55,7 +55,7 @@ namespace _057___Public_и_Private_модификаторы_доступа
                                 // Вызов Private мтода PrintX возможен т.к. сам PrintPoint находится
                                 // внутри области видимости класса Point, следовательно все поля и методы
                                 // с модификатором Private для него доступны.
-            
+
             // Получения информации о модификаторах доступа полей класса
             var typeInfo = typeof(Point).
                 GetFields(BindingFlags.Instance |

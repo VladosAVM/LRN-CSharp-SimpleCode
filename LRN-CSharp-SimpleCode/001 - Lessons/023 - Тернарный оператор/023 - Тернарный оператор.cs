@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Runtime.InteropServices;
 
 /* Тернарный оператор
  * 
@@ -19,6 +20,11 @@ namespace _023___Тернарный_оператор
              * 
              * Синтаксис:
              * переменная = первый_операнд (условие) ? второй_операнд (if_true) : третий_операнд (if_else)
+             * переменная = условие ? true : else
+             * 
+             * int x = 0;
+             * int y = 1;
+             * int maxValue = x > y ? x : y;
              */
 
             bool accessAllowed;
@@ -31,7 +37,7 @@ namespace _023___Тернарный_оператор
 
             int inputData = int.Parse(Console.ReadLine());
             int outputData = inputData >= 0 ? inputData : 0;
-            Console.WriteLine(outputData); 
+            Console.WriteLine(outputData);
         }
     }
 }

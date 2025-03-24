@@ -1,32 +1,23 @@
 ﻿using System;
+using System.Diagnostics;
+using System.Linq;
 using System.Runtime.ExceptionServices;
 using System.Runtime.InteropServices;
+using System.Text;
+using System.Threading.Tasks;
 using System.Xml.Serialization;
 
 namespace _001___TEST
 {
     internal class Program
     {
-        static int[,] GetRandomArr2D(ref int[,] arr, int minValue, int maxValue)
-        {
-            Random rnd = new Random();
 
-            for (int i = 0; i < arr.GetLength(0); i++)
-            {
-                for (int j = 0; j < arr.GetLength(1); j++)
-                {
-                    arr[i,j] = rnd.Next(minValue, maxValue);
-                }
-            }
-
-            return arr;
-        }
         /// <summary>
         /// <para>Вывод значений одномерного массива в консоль.</para>
         /// <para>Print 1D array values in console.</para>
         /// </summary>
         /// <param name="arr">Массив значений для вывода в консоль.</param>
-        static void PrintArr1D(int[] arr)
+        static void PrintArr<T>(T[] arr)
         {
             for (int i = 0; i < arr.Length; i++)
                 Console.Write($"{arr[i]} ");
@@ -37,14 +28,33 @@ namespace _001___TEST
         /// <para>Print 2D array values in console.</para>
         /// </summary>
         /// <param name="arr">Массив значений для вывода в консоль.</param>
-        static void PrintArr2D(int[,] arr)
+        static void PrintArr<T>(T[,] arr)
         {
-            for (int i = 0; i < arr.GetLength(0); i++)
+            for (int y = 0; y < arr.GetLength(0); y++)
             {
-                for (int j = 0; j < arr.GetLength(1); j++)
+                for (int x = 0; x < arr.GetLength(1); x++)
                 {
-                    Console.Write($"{arr[i, j]} ");
+                    Console.Write($"{arr[y, x]}\t");
                 }
+
+                Console.WriteLine();
+            }
+        }
+
+        /// <summary>
+        /// <para>Вывод значений двумерного зубчатого массива в консоль.</para>
+        /// <para>Print 2D jagged array values in console.</para>
+        /// </summary>
+        /// <param name="arr">Массив значений для вывода в консоль.</param>
+        static void PrintArr<T>(T[][] arr)
+        {
+            for (int y = 0; y < arr.Length; y++)
+            {
+                for (int x = 0; x < arr[y].Length; x++)
+                {
+                    Console.Write($"{arr[y][x]}\t");
+                }
+
                 Console.WriteLine();
             }
         }
@@ -98,21 +108,23 @@ namespace _001___TEST
         }
 
         /// <summary>
-        /// Подсчёт суммы элементов массива при помощи рекурсии
+        /// Подсчёт суммы элементов массива при помощи рекурсии.
         /// </summary>
         /// <param name="arr">Массив</param>
         /// <param name="index"></param>
         /// <param name="result"></param>
         static int RecursionArraySum(int[] arr, int index = 0)
         {
+            // Точка выхода из рекурсии
             if (index >= arr.Length)
                 return 0;
 
+            // Ркурсионный вызов с подсчётом суммы при выоде из рекурсии
             return arr[index] + RecursionArraySum(arr, index + 1);
         }
 
         /// <summary>
-        /// Расчёт суммы цифр числа при помощи рекурсии
+        /// Расчёт суммы цифр числа при помощи рекурсии.
         /// </summary>
         /// <param name="num">Число для расчёта суммы цифр</param>
         /// <param name="result"></param>
@@ -124,16 +136,76 @@ namespace _001___TEST
             return (num % 10) + RecursionDigitOfNumberSum(num / 10);
         }
 
+        /// <summary>
+        /// Добавляет новые данные в новую строку в двумерном массиве типа string.
+        /// </summary>
+        /// <param name="arr"></param>
+        static void AddNewData2DArray(ref string[,] arr)
+        {
+            // Добавление строки
+            AddNewLine2DArray(ref arr);
 
+            // Добавление данных в пустые ячейки новой строки
+            for (int x = 0; x < arr.GetLength(1); x++)
+                arr[arr.GetLength(0) - 1, x] = Console.ReadLine();
+        }
+
+
+        // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+        // !!!                          НЕ ПОНИМАЮ КАК РАБОТАЕТ - Func<string, T> converter                          !!!
+        // !!!                                                                                                       !!!
+        // !!! вызов метода - AddNewData2DArray(ref arr, input => int.TryParse(input, out int result) ? result : 0); !!!
+        // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+        /// <summary>
+        /// Добавляет новые данные в новую строку в двумерном массиве с любым типом данных.
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="arr"></param>
+        /// <param name="converter"></param>
+        static void AddNewData2DArray<T>(ref T[,] arr, Func<string, T> converter)
+        {
+            AddNewLine2DArray(ref arr);
+
+            for (int x = 0; x < arr.GetLength(1); x++)
+                arr[arr.GetLength(0) - 1, x] = converter(Console.ReadLine());
+        }
+        // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+        /// <summary>
+        /// Добавляет новую строку в двумерных массив с любым типом данных.
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="arr"></param>
+        static void AddNewLine2DArray<T>(ref T[,] arr)
+        {
+            // Добавление строки
+            T[,] newArr = new T[arr.GetLength(0) + 1, arr.GetLength(1)];
+
+            // Копирование старого массива
+            for (int y = 0; y < arr.GetLength(0); y++)
+                for (int x = 0; x < arr.GetLength(1); x++)
+                    newArr[y, x] = arr[y, x];
+
+            // Присвоение сылки нового массива в старую переменную
+            arr = newArr;
+        }
+
+        static void ASD(out int x, out string y, out bool axx)
+        {
+            x = 6;
+            y = "qwe";
+            axx = true;
+
+            //return x; 
+        }
 
         static void Main(string[] args)
         {
-            int[,] arr = new int[8, 8];
 
-            GetRandomArr2D(ref arr, 1, 6);
-            PrintArr2D(arr);
 
-            
+
         }
     }
 }
