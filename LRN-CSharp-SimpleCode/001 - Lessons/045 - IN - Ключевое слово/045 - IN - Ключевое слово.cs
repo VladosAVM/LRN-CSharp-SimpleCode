@@ -22,17 +22,24 @@ namespace _045___IN___Ключевое_слово
             public decimal h;
             public decimal i;
         }
-        static void BenchmarkWithoutIn(TestStruct value)
-        {
+        static void BenchmarkWithoutIn(TestStruct value){ }
+        static void BenchmarkWithIn(in TestStruct value){ }
 
-        }
-        static void BenchmarkWithIn(in TestStruct value)
+        static void DefaultIn(in int x = 10)
         {
-
+            Console.WriteLine(x);
         }
+
+
         static void Main(string[] args)
         {
-            /* in - ключевое слово которое устанавливает
+            /*  INFO:
+             *  1. Переменная ОБЯЗАТЕЛЬНО должна быть ИНИЦИАЛИЗИРОВАННА при передаче через IN.
+             *  2. НЕЛЬЗЯ присваивать новое значение переменной в методе т.к. она получает свойство - ReadOnly.
+             *  3. Методы принимающие значения с модификатором ref, in, out не могут быть асинхронными.
+             *      async void TEST(in int x) - НЕ скомпилируется
+             * 
+             * in - ключевое слово которое устанавливает
              * флаг ReadOnly (только для чтения) на переменную
              * передоваемую в метод.
              * 
@@ -40,8 +47,8 @@ namespace _045___IN___Ключевое_слово
              * этой переменной, а изменять данные полностью запрещенно.
              * 
              * Может возникнуть закономерный вопрос, а зачем нам
-             * передовать перемунную по ссылке, ведь кроме защиты переменной
-             * от записи больше приимущест нет, и мы можем просто передовать
+             * передавать перемунную по ссылке, ведь кроме защиты переменной
+             * от записи больше приимущест нет, и мы можем просто передавать
              * переменную в метод без каких-либо модификаторов, однако это не так.
              * in позволяет значительно сократить нагрузку на оперативную
              * память и ускорить работу программы путём передачи переменной по ссылке.
@@ -52,7 +59,7 @@ namespace _045___IN___Ключевое_слово
              * каждого из них.
              */
 
-            TestStruct s = new TestStruct();
+            TestStruct testStruct = new TestStruct();
             TimeSpan elapsed;
             string formattedTime;
             Stopwatch sw = Stopwatch.StartNew();
@@ -61,7 +68,7 @@ namespace _045___IN___Ключевое_слово
 
             for (int i = 0; i < int.MaxValue / 4; i++)
             {
-                BenchmarkWithoutIn(s);
+                BenchmarkWithoutIn(testStruct);
             }
             sw.Stop();
             elapsed = sw.Elapsed;
@@ -72,14 +79,26 @@ namespace _045___IN___Ключевое_слово
             sw.Restart();
             for (int i = 0; i < int.MaxValue / 4; i++)
             {
-                BenchmarkWithIn(s);
+                BenchmarkWithIn(testStruct);
             }
             elapsed = sw.Elapsed;
             formattedTime = string.Format("{0}сек. {1:D3}милисек.", elapsed.Seconds, elapsed.Milliseconds);
             Console.WriteLine($"Время выполнения  C  in: {formattedTime}\n\n\n\n");
             sw.Stop();
 
-            Console.ReadLine();
+            // Работа метода с аргументом имеющим модификатор IN и установленным значением по умолчянию
+            // Если передать переменную в метод который принимает значение с модификатором IN, то переменная
+            // передастся по ссылке, но иизменить её будет невозможно т.к. будет установлен флаг ReadOnly.
+            // Если вызвать метод без передачи в него переменной то к аргументу метода будет применено
+            // установленное значение по умолчанию.
+            Console.WriteLine("------Default in - void DefaultIn(in int x = 10) -------");
+
+            int x = 5;
+
+            DefaultIn();
+            DefaultIn(x);
+
+            Console.WriteLine(x);
         }
     }
 }

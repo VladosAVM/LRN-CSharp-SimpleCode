@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Runtime.InteropServices;
 
 /* ENUM
  * 
@@ -12,7 +13,7 @@ namespace _054___ENUM
         /// <summary>
         /// enum дней недели
         /// </summary>
-        enum DayOfWeek : byte
+        enum DayOfWeek : byte // Явное указание используемого типа данных для числового представления Enum
         {
             Monday = 1,
             Tuesday,
@@ -22,7 +23,6 @@ namespace _054___ENUM
             Saturday,
             Sunday
         }
-
 
         /// <summary>
         /// enum цветов
@@ -36,11 +36,10 @@ namespace _054___ENUM
             Orange
         }
 
-
         /// <summary>
-        /// // Обычная версия с передачей аргумента
+        /// Вывод всех значений enum в консоль
         /// </summary>
-        /// <param name="enumType"></param>
+        /// <param name="enumType">Enum</param>
         static void PrintEnum(Type enumType)
         {
             if (!enumType.IsEnum)
@@ -51,7 +50,7 @@ namespace _054___ENUM
                 return;
             }
             
-            var values = Enum.GetValues((enumType));
+            var values = Enum.GetValues(enumType);
 
             for (var i = 0; i < values.Length; i++)
             {
@@ -70,7 +69,6 @@ namespace _054___ENUM
 
             Console.WriteLine();
         }
-
 
         /// <summary>
         /// Вывод всех значений enum в консоль - Дженерик версия принимающая в качестве аргумента только enum
@@ -98,7 +96,6 @@ namespace _054___ENUM
             Console.WriteLine();
         }
 
-
         /// <summary>
         /// Получение следующего дня недели
         /// </summary>
@@ -111,9 +108,6 @@ namespace _054___ENUM
 
             return DayOfWeek.Monday;
         }
-
-
-
 
         static void Main(string[] args)
         {
@@ -211,17 +205,20 @@ namespace _054___ENUM
             
             Console.WriteLine($"Список доуступных цветов:");
 
-            //PrintEnum<Colors>(); // Дженерик версия принимающая только enum
-            PrintEnum(typeof(Colors)); // Обычная версия с передачей аргумента
+            PrintEnum<Colors>();        // Дженерик версия принимающая только enum
+            PrintEnum(typeof(Colors));  // Обычная  версия вывода значений enum с передачей аргумента
 
-            Console.WriteLine($"Введите цвет для поиска в enum: ");
-            string str = Console.ReadLine();
-            Colors color = (Colors)Enum.Parse(typeof(Colors), str, ignoreCase: true);
-            Console.WriteLine(color);
+            Console.WriteLine($"Введите цвет для поиска через Enum.Parse() в enum: ");
+            string colorSearch1 = Console.ReadLine();
+            Colors color1 = (Colors)Enum.Parse(typeof(Colors), colorSearch1, ignoreCase: true);
+            Console.WriteLine(color1);
 
             // Также у Enum есть метод TryParse который работает аналогично методу int.TryParse()
-
-
+            Console.WriteLine($"Введите цвет для поиска через Enum.TryParse() в enum: ");
+            string colorSearch2 = Console.ReadLine();
+            var color2 = Enum.TryParse(colorSearch2, true, out Colors colorSearch2Result);
+            Console.WriteLine(color2); // True/False
+            Console.WriteLine(colorSearch2Result); // Вывод цвета
         }
     }
 }

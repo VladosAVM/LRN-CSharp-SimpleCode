@@ -14,7 +14,7 @@ namespace _046___PARAMS___Ключевое_слово
         /// Вывод всех передоваемых переменных с инфрмацией об их типе данных и значении.
         /// </summary>
         /// <param name="parameters"></param>
-        static void Test(params object[] parameters)
+        static void TypeInfoPrint(params object[] parameters)
         {
             string message = "Тип данных: {0}, \tЗначение: {1}";
 
@@ -56,8 +56,6 @@ namespace _046___PARAMS___Ключевое_слово
         /// <para>Заглушка для вызова метода без передачи параметров.</para>
         /// <para>Возвращает 0.</para>
         /// </summary>
-        /// <typeparam name="T"></typeparam>
-        /// <param name="parametrs"></param>
         /// <returns></returns>
         static int Sum2()
         {
@@ -66,27 +64,35 @@ namespace _046___PARAMS___Ключевое_слово
         static void Main(string[] args)
         {
             /* params - используется как модификатор при написании методов
-             * который позволяет передовать в метод неограниченное число параметров.
+             * который позволяет передовать в метод неограниченное число аргументов.
              * 
              * При написании метода стоит учитывать что params необходимо указывать
-             * последним принимаемым параметром:
+             * последним принимаемым аргументом:
              *      static int Sum(params int[] parameters, bool chachacha) <- !!! ОШИБКА !!!
              *      static int Sum(bool chachacha, params int[] parameters) <- Верно
-             * Также в одном методе не может быть 2-х параметров с модификатором params.
+             * Также в одном методе не может быть 2-х аргументов с модификатором params.
              */
             int a = 1;
             int b = 2;
             int c = 3;
             int d = 4;
             int e = 5;
+            
+            // Передеча разного количества переменных в метод с params аргументом
             Console.WriteLine(Sum1(a, b));
             Console.WriteLine(Sum1(a, b, c, d, e));
             Console.WriteLine(Sum1(a, b, c, 5));
+
+            // Передеча разного количества переменных в ДЖЕНЕРИК метод
+            // с params аргументом
             Console.WriteLine(Sum2(a, b, c, 5, 4.6));
             Console.WriteLine(Sum2());
+
             Console.WriteLine();
 
-            Test("test", 5, 'q', 5.89f, true);
+            // Передача разного количества аргументов разного типа в метод
+            // с params аргументом
+            TypeInfoPrint("test", 5, 'q', 5.89f, true);
         }
     }
 }

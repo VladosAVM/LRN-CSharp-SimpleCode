@@ -23,7 +23,7 @@ namespace _052___NULLABLE___null_совместимые_значимые_тип�
              *      .HasValue - проверяет наличие значения в переменной true\false
              *      .Value    - выдаёт значение которое присвоено переменной. Используется
              *                  в случае когда с переменной совершаются какието действия.
-             *                  В случае если в переменной null а мы вытаетесь напрямую оперировать
+             *                  В случае если в переменной null, а вы пытаетесь напрямую оперировать
              *                  значением переменной то будет ошибка.
              *      .GetValueOrDefault() - выводит текущее значение или дефолтное если
              *                             текущее null, также дефолтное значение можно
@@ -55,16 +55,28 @@ namespace _052___NULLABLE___null_совместимые_значимые_тип�
 
             int x = 7;
             int? y = null;
-            int? result = x + y;
-            Console.WriteLine(result); // 
+
+            // Выражение с Nullable переменной содержащей null - БЕЗ проверки
+            int? result1 = x + y;
+            Console.WriteLine(result1); // 
             Console.WriteLine(x == y); // false
             Console.WriteLine(x >= y); // false
             Console.WriteLine(x < y);  // false
             Console.WriteLine(x != y); // True
 
+
+            // Выражение с Nullable переменной содержащей null - С проверкой
+            int? result2 = x + y.GetValueOrDefault();
+            Console.WriteLine(result2); // 7
+            Console.WriteLine(x == y); // false
+            Console.WriteLine(x >= y); // false
+            Console.WriteLine(x < y);  // false
+            Console.WriteLine(x != y); // True
+
+            // Выражение с Nullable переменной содержащей значение - БЕЗ проверки
             y = 7;
-            result = x + y;
-            Console.WriteLine(result); // 14
+            int? result3 = x + y;
+            Console.WriteLine(result3); // 14
             Console.WriteLine(x == y); // true
             Console.WriteLine(x >= y); // true
             Console.WriteLine(x < y);  // false

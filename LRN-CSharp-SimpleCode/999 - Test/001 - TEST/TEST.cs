@@ -188,24 +188,16 @@ namespace _001___TEST
                 for (int x = 0; x < arr.GetLength(1); x++)
                     newArr[y, x] = arr[y, x];
 
-            // Присвоение сылки нового массива в старую переменную
+            // Присвоение сcылки нового массива в старую переменную
             arr = newArr;
         }
-
-        static void ASD(out int x, out string y, out bool axx)
+        static void ASD(ref int? x)
         {
-            x = 6;
-            y = "qwe";
-            axx = true;
 
-            //return x; 
         }
 
         static void Main(string[] args)
         {
-
-
-
         }
     }
 }
