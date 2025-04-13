@@ -152,10 +152,6 @@ namespace _055___CLASS
             var firstStudent = GetStudent();
             Console.WriteLine();
             PrintStudent(firstStudent);
-
-
-
-
         }
     }
 }

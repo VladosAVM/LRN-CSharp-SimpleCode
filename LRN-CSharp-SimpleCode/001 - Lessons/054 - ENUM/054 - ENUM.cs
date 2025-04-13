@@ -49,7 +49,7 @@ namespace _054___ENUM
                                   $"Тип {enumType} = {enumType.GetType()}");
                 return;
             }
-            
+
             var values = Enum.GetValues(enumType);
 
             for (var i = 0; i < values.Length; i++)
@@ -74,9 +74,9 @@ namespace _054___ENUM
         /// Вывод всех значений enum в консоль - Дженерик версия принимающая в качестве аргумента только enum
         /// </summary>
         /// <typeparam name="T"></typeparam>
-        static void PrintEnum<T>() where T : Enum        
+        static void PrintEnum<T>() where T : Enum
         {
-            var values = Enum.GetValues(typeof(T));           
+            var values = Enum.GetValues(typeof(T));
 
             for (var i = 0; i < values.Length; i++)
             {
@@ -202,7 +202,7 @@ namespace _054___ENUM
             //      2. Строку с данными которые необходимо найти
             //      3. Модификатор включения/отключения учёта регистра значений данных
 
-            
+
             Console.WriteLine($"Список доуступных цветов:");
 
             PrintEnum<Colors>();        // Дженерик версия принимающая только enum
@@ -219,6 +219,105 @@ namespace _054___ENUM
             var color2 = Enum.TryParse(colorSearch2, true, out Colors colorSearch2Result);
             Console.WriteLine(color2); // True/False
             Console.WriteLine(colorSearch2Result); // Вывод цвета
+
+            // ----------
+            // -- INFO --
+            // ----------
+            // При работе с Enum даже на базовом уровне есть несколько важных моментов.
+
+            // 1.
+            // Обращение к Enum при получении данных от пользователя, базы данных, API и т.д.
+            // Проблема заключается в том, как использовать метод Enum.TryParse
+
+            // Пример:
+            //  bool goodParse = Enum.TryParse("не существующее значение", true\false, out EnumType parseResult);
+
+            // Если во время попытки парсинга значения в метод TryParse будет переданно
+            // НЕчисловое и НЕсуществующее значение, тогда переменная parseResult будет содержать 0.
+            // Т.к. нумерация значений в Enum по умолчанию идёт с 0 или в коде явно может быть присвоено
+            // значение 0 какомуто элементу Enum, то и результат будет некоректный.
+            // Т.е. мы должны были получить ошибку и не выводить значение, а по факту мы получаем
+            // вывод значения с номером 0, что приводит к некорректной работе программы.
+
+            /* Пример: 
+                enum Drink { Чай, Кофе }
+
+                Enum.TryParse("НЕверные НЕчисловые данные", true, out Drink drinkParseResult);
+                
+                switch (drinkParseResult)
+                {
+                    case Drink.Чай:
+                        Console.WriteLine("Вы выбрали: Чай);
+                        orderComplete = true;
+                        break;
+                    case Drink.Кофе:
+                        Console.WriteLine("Вы выбрали: Кофе");
+                    default:
+                        Console.WriteLine("!!! Такого напитка нет в меню !!!\n");
+                        break;
+                 }
+             */
+            // В данном примере мы никогда не достигнем значения default, и как результат всегда
+            // будем получать ошибочный вывод первого кейса т.к. TryParse будет возвращать Дуфолтное
+            // значение для int, т.е. 0.
+
+            // Чтобы избежать подобной проблеммы стоит осуществлять проверку на наличие этих данных в Enum
+            /* Пример:
+                 if (goodParse && Enum.IsDefined(typeof(Drink), drinkParseResult))
+                        switch (drinkPar.....
+                 else
+                        Console.WriteLine("!!! Такого напитка нет в меню !!!\n");
+            */
+            // goodParse - проверяет корректность ввода данных
+            // Enum.IsDefined - проверяет наличие числового значения в Enum
+
+            // 2.
+            // Также возможны проблемы при переборе Enum через цикл ForEach
+            /* Пример:
+                  enum Drink
+                  {
+                      Чай = 16,
+                      Кофе = 22
+                  }
+            
+                  foreach (var item in Enum.GetValues(enumDrink))
+                      Console.Write($"{item}" + $"{((int)item < menu.Length ? ", " : ".")}");
+            */
+            // Проблема заключается в том что Enum это не массив и при переборе мы обращаемся не к индексу,
+            // а к элементу, и растановка знаком припенания может сломаться т.к. (int)item может иметь
+            // любое значение.
+            // Конкретно в этом примере, заместо ожидаемых запятых (,) будут стоять точки (.)
+            // Чтобы этого избежать необходимо использовать дополнительные перменные.
+            /* Пример:
+                    enum Drink
+                    {
+                        Чай = 16,
+                        Кофе
+                    }
+
+                    static void PrintMenu(Type enumDrink)
+                    {
+                        var menu = Enum.GetValues(enumDrink);
+                        int menuLength = menu.Length; // Количество элементов в извлечённом Enum
+                        int index = 0;                // Позиция извлекаемого элемента
+
+
+                        // Вывод списка напитков в консоль через цикл foreach
+                        foreach (var item in menu)
+                        {
+                            Console.Write(item);
+
+                            // Проверка позиции элемента enum для определения знака припенания
+                            index++;
+                            Console.Write($"{(index < menuLength ? ", " : ".")}");
+                        }
+                    }
+            */
+            // При такой реализации мы будем защищенны от некоректной растановки знаков припенания
+            // т.к. index является отдельной самостоятельной переменной, итерируется самостоятельно
+            // и не зависит от чего-либо.
+
+
         }
     }
 }
