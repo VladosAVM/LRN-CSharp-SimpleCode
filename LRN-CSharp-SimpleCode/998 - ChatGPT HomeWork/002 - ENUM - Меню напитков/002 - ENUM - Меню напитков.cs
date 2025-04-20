@@ -39,7 +39,6 @@ namespace _002___ENUM___Меню_напитков
                 Console.Write($"{(index < menuLength ? ", " : ".")}");
             }
 
-
             // Переход на новую строку из-за использованного ранее "Console.Write"
             Console.WriteLine();
         }

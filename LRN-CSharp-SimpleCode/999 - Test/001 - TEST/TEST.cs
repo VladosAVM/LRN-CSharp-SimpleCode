@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Concurrent;
 using System.Diagnostics;
 using System.Linq;
 using System.Runtime.ExceptionServices;
@@ -196,12 +197,36 @@ namespace _001___TEST
 
         }
 
-
+        enum SkinColors
+        {
+            White,
+            Black,
+            Yellow
+        }
 
         static void Main(string[] args)
         {
+            Test test = new Test();
+            test.TestTest();
 
+        }
+    }
 
+    class Test
+    {
+        public Test()
+        {
+            _x = 30;
+            Console.WriteLine(_x);
+        }
+
+        int _x = 10;
+
+        public void TestTest()
+        {
+            Console.WriteLine(_x);
+            _x = 20;
+            Console.WriteLine(_x);
         }
     }
 }
