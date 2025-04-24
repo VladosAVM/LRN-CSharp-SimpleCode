@@ -155,6 +155,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "058 - Инкапсуляц�
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "059 - Конструктор класса", "001 - Lessons\059 - Конструктор класса\059 - Конструктор класса.csproj", "{371B27E9-A6F0-45BB-982C-1368F3264AD7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "060 - Перегрузка конструкторов класса", "001 - Lessons\060 - Перегрузка конструкторов класса\060 - Перегрузка конструкторов класса.csproj", "{6D977DF9-1292-4437-A7BB-F55C518644FE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -445,6 +447,10 @@ Global
 		{371B27E9-A6F0-45BB-982C-1368F3264AD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{371B27E9-A6F0-45BB-982C-1368F3264AD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{371B27E9-A6F0-45BB-982C-1368F3264AD7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D977DF9-1292-4437-A7BB-F55C518644FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D977DF9-1292-4437-A7BB-F55C518644FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D977DF9-1292-4437-A7BB-F55C518644FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D977DF9-1292-4437-A7BB-F55C518644FE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -521,6 +527,7 @@ Global
 		{D8E77BE9-E16F-4751-A9DD-AC601D784159} = {B48E9C1A-6337-4C2C-A2F5-15E527A1BA3F}
 		{516D3379-5E0E-4490-8E99-F3DA271BAE07} = {08017CE6-7599-4266-92C3-67685BCE0973}
 		{371B27E9-A6F0-45BB-982C-1368F3264AD7} = {08017CE6-7599-4266-92C3-67685BCE0973}
+		{6D977DF9-1292-4437-A7BB-F55C518644FE} = {08017CE6-7599-4266-92C3-67685BCE0973}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5131EB3F-3A15-4D42-8167-54A12762E996}
